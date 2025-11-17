@@ -1,20 +1,20 @@
 // Background script para manejar permisos del micrófono
 chrome.runtime.onInstalled.addListener(() => {
-  console.log('Extensión Transcripción de Voz + IA instalada');
+  console.log(chrome.i18n.getMessage('backgroundInstalled'));
 });
 
 // Manejar mensajes del popup
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === 'requestMicrophonePermission') {
-    console.log('Solicitando permisos del micrófono desde background script...');
+    console.log(chrome.i18n.getMessage('backgroundRequestingPermission'));
     
     // Verificar si el navegador soporta getUserMedia
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-      console.error('getUserMedia no está soportado en este navegador');
-      sendResponse({ 
-        success: false, 
+      console.error(chrome.i18n.getMessage('errorNoMicrophone'));
+      sendResponse({
+        success: false,
         error: 'NotSupportedError',
-        message: 'getUserMedia no está soportado en este navegador'
+        message: chrome.i18n.getMessage('errorNoMicrophone')
       });
       return true;
     }

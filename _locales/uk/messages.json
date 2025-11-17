@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Транскрипція Голосу + Резюме AI",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Перетворіть свій голос на текст і створіть інтелектуальні резюме AI",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Транскрипція Голосу + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Транскрипція Голосу + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Голос у текст з резюме",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Запис Голосу",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Почати Запис",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Зупинити Запис",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Очистити Все",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Готовий до запису",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Записується...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Запис зупинено",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Запит дозволів...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Дозволи успішно надано",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Початок запису...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Транскрибований Текст",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Транскрибування в режимі реального часу...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Транскрибований текст з'явиться тут у режимі реального часу...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ слів",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ символів",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 Резюме AI",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Коротке",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Середнє",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Довге",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Загальне",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Ключові Пункти",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Детальне",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Створити Резюме",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "Резюме, створене AI, з'явиться тут...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Експорт",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Зберегти як TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Копіювати в Буфер",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Транскрипція голосу в реальному часі з інтелектуальним резюме",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Помилка: Ваш браузер не підтримує доступ до мікрофона",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Помилка: Дозволи мікрофона відхилено. Будь ласка, дозвольте доступ до мікрофона.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Помилка: Мовлення не виявлено. Спробуйте говорити ближче до мікрофона.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Помилка: Не вдається отримати доступ до мікрофона. Перевірте, чи не використовується він іншою програмою.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Помилка: Проблема мережі. Перевірте ваше інтернет-з'єднання.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Запис перервано.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Помилка: Пристрій мікрофона не знайдено.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Помилка: Мікрофон використовується іншою програмою.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Помилка: Контекст не захищений (використовуйте HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Помилка початку запису",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Ваш браузер не підтримує розпізнавання мовлення. Спробуйте Chrome або Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Розпізнавання мовлення недоступне у вашому браузері.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Немає тексту для резюме.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Немає вмісту для збереження.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Немає вмісту для копіювання.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Вміст скопійовано в буфер обміну.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Помилка копіювання в буфер обміну.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Виникла помилка під час створення резюме.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Будь ласка, дозвольте доступ до мікрофона в налаштуваннях браузера.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Нам потрібні дозволи. Відкриється вікно для надання доступу до мікрофона...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Дозволи надано. Запуск...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Дозволи не надано.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== ТРАНСКРИБОВАНИЙ ТЕКСТ ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== РЕЗЮМЕ ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Створено:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Ключові Пункти:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Детальне Резюме:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Резюме:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Не вдалося створити резюме з наданого тексту.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Дозволити доступ до мікрофона",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Натисніть \"Дозволити\", коли Chrome покаже діалогове вікно дозволів. Якщо воно не з'явиться, натисніть кнопку нижче.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Запитати дозвіл",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Розширення Транскрипція Голосу + AI встановлено",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Запит дозволів мікрофона з фонового скрипта...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Мова Голосу:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

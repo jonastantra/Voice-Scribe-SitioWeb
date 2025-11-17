@@ -1,51 +1,68 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transcripción de Voz + Resumen IA</title>
+    <title data-i18n="extTitle"></title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="header compact">
-            <h1>🎤 Transcripción de Voz + IA</h1>
-            <p>Voz a texto con resumen</p>
+            <h1 data-i18n="headerTitle"></h1>
+            <p data-i18n="headerSubtitle"></p>
         </div>
         
         <div class="content">
             <!-- Sección de Grabación -->
             <div class="section">
                 <details class="collapsible" open>
-                    <summary class="section-title">🎙️ Grabación de Voz</summary>
+                    <summary class="section-title" data-i18n="sectionRecording"></summary>
+                    <div class="language-selector">
+                        <label data-i18n="voiceLanguageLabel"></label>
+                        <select id="voiceLangSelect">
+                            <option value="es-ES">🇪🇸 Español</option>
+                            <option value="en-US">🇺🇸 English</option>
+                            <option value="pt-BR">🇧🇷 Português</option>
+                            <option value="fr-FR">🇫🇷 Français</option>
+                            <option value="de-DE">🇩🇪 Deutsch</option>
+                            <option value="it-IT">🇮🇹 Italiano</option>
+                            <option value="ru-RU">🇷🇺 Русский</option>
+                            <option value="zh-CN">🇨🇳 中文</option>
+                            <option value="ja-JP">🇯🇵 日本語</option>
+                            <option value="ko-KR">🇰🇷 한국어</option>
+                            <option value="ar-SA">🇸🇦 العربية</option>
+                            <option value="hi-IN">🇮🇳 हिन्दी</option>
+                        </select>
+                    </div>
                     <div class="button-group">
-                    <button id="startBtn" class="btn-primary">
+                    <button id="startBtn" class="btn-primary" data-i18n="btnStartRecording">
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
                             <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
                             <line x1="12" y1="19" x2="12" y2="23"></line>
                             <line x1="8" y1="23" x2="16" y2="23"></line>
                         </svg>
-                        Iniciar Grabación
+                        <span data-i18n="btnStartRecording"></span>
                     </button>
-                    <button id="stopBtn" class="btn-danger" disabled>
+                    <button id="stopBtn" class="btn-danger" disabled data-i18n="btnStopRecording">
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="6" y="4" width="4" height="16"></rect>
                             <rect x="14" y="4" width="4" height="16"></rect>
                         </svg>
-                        Detener Grabación
+                        <span data-i18n="btnStopRecording"></span>
                     </button>
-                    <button id="clearBtn" class="btn-secondary">
+                    <button id="clearBtn" class="btn-secondary" data-i18n="btnClearAll">
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="3 6 5 6 21 6"></polyline>
                             <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                         </svg>
-                        Limpiar Todo
+                        <span data-i18n="btnClearAll"></span>
                     </button>
                     </div>
                     <div class="status-indicator">
                         <div class="status-dot" id="statusDot"></div>
-                        <span id="statusText">Listo para grabar</span>
+                        <span id="statusText" data-i18n="statusReady"></span>
                     </div>
                 </details>
             </div>
@@ -53,16 +70,16 @@
             <!-- Sección de Texto Transcrito -->
             <div class="section">
                 <details class="collapsible" open>
-                    <summary class="section-title">📝 Texto Transcrito</summary>
+                    <summary class="section-title" data-i18n="sectionTranscription"></summary>
                     <div class="transcription-container">
                     <div class="real-time-indicator" id="realTimeIndicator">
                         <span class="pulse"></span>
-                        Transcribiendo en tiempo real...
+                        <span data-i18n="realTimeIndicator"></span>
                     </div>
-                    <textarea id="transcribedText" placeholder="El texto transcrito aparecerá aquí en tiempo real..."></textarea>
+                    <textarea id="transcribedText" data-i18n-placeholder="transcriptionPlaceholder"></textarea>
                     <div class="text-stats">
-                        <span id="wordCount">0 palabras</span>
-                        <span id="charCount">0 caracteres</span>
+                        <span id="wordCount"></span>
+                        <span id="charCount"></span>
                     </div>
                     </div>
                 </details>
@@ -71,21 +88,21 @@
             <!-- Sección de Resumen IA -->
             <div class="section">
                 <details class="collapsible">
-                    <summary class="section-title">🤖 Resumen con IA</summary>
+                    <summary class="section-title" data-i18n="sectionSummary"></summary>
                     <div class="ai-controls">
                     <div class="select-group">
                         <select id="summaryLength">
-                            <option value="short">Corto</option>
-                            <option value="medium" selected>Medio</option>
-                            <option value="long">Largo</option>
+                            <option value="short" data-i18n="summaryLengthShort"></option>
+                            <option value="medium" selected data-i18n="summaryLengthMedium"></option>
+                            <option value="long" data-i18n="summaryLengthLong"></option>
                         </select>
                         <select id="summaryStyle">
-                            <option value="general" selected>General</option>
-                            <option value="bullet">Puntos clave</option>
-                            <option value="detailed">Detallado</option>
+                            <option value="general" selected data-i18n="summaryStyleGeneral"></option>
+                            <option value="bullet" data-i18n="summaryStyleBullet"></option>
+                            <option value="detailed" data-i18n="summaryStyleDetailed"></option>
                         </select>
                     </div>
-                    <button id="summaryBtn" class="btn-success">
+                    <button id="summaryBtn" class="btn-success" data-i18n="btnGenerateSummary">
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                             <polyline points="14 2 14 8 20 8"></polyline>
@@ -93,40 +110,84 @@
                             <line x1="16" y1="17" x2="8" y2="17"></line>
                             <polyline points="10 9 9 9 8 9"></polyline>
                         </svg>
-                        Generar Resumen
+                        <span data-i18n="btnGenerateSummary"></span>
                         <span class="loader" id="summaryLoader" style="display: none;"></span>
                     </button>
                     </div>
-                    <textarea id="summaryText" placeholder="El resumen generado por IA aparecerá aquí..." readonly></textarea>
+                    <textarea id="summaryText" data-i18n-placeholder="summaryPlaceholder" readonly></textarea>
                 </details>
             </div>
             
             <!-- Sección de Exportación -->
             <div class="section">
                 <details class="collapsible">
-                    <summary class="section-title">💾 Exportar</summary>
+                    <summary class="section-title" data-i18n="sectionExport"></summary>
                     <div class="button-group">
-                    <button id="saveBtn" class="btn-primary">
+                    <button id="saveBtn" class="btn-primary" data-i18n="btnSaveAsTxt">
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
                             <polyline points="17 21 17 13 7 13 7 21"></polyline>
                             <polyline points="7 3 7 8 15 8"></polyline>
                         </svg>
-                        Guardar como TXT
+                        <span data-i18n="btnSaveAsTxt"></span>
                         </button>
-                        <button id="copyBtn" class="btn-secondary">
+                        <button id="copyBtn" class="btn-secondary" data-i18n="btnCopyToClipboard">
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                             <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                         </svg>
-                        Copiar al Portapapeles
+                        <span data-i18n="btnCopyToClipboard"></span>
                         </button>
                     </div>
                 </details>
+            </div>
+            
+            <!-- Sección de Calificación y Soporte -->
+            <div class="section">
+                <details class="collapsible">
+                    <summary class="section-title" data-i18n="sectionRating"></summary>
+                    <div class="rating-container">
+                        <div class="rating-section">
+                            <div class="rating-header">
+                                <span data-i18n="rateUsTitle"></span>
+                            </div>
+                            <div class="stars-container" id="starsContainer">
+                                <svg class="star" data-rating="1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <svg class="star" data-rating="2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <svg class="star" data-rating="3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <svg class="star" data-rating="4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <svg class="star" data-rating="5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="support-actions">
+                            <div class="support-section">
+                                <span data-i18n="needHelpTitle"></span>
+                                <button id="copySupportEmailBtn" class="btn-secondary btn-small">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <span data-i18n="copySupportEmail"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
         </div>
         
         <div class="footer">
-            <p>✨ Transcripción de voz en tiempo real con resumen inteligente</p>
+            <p data-i18n="footerText"></p>
         </div>
     </div>
 

@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Transkripsi Suara + Ringkasan AI",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Ubah suara Anda menjadi teks dan buat ringkasan cerdas AI",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Transkripsi Suara + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Transkripsi Suara + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Suara ke teks dengan ringkasan",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Perekaman Suara",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Mulai Merekam",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Hentikan Perekaman",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Hapus Semua",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Siap merekam",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Merekam...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Perekaman dihentikan",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Meminta izin...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Izin berhasil diberikan",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Memulai perekaman...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Teks Transkripsi",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Mentranskripsi secara real-time...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Teks transkripsi akan muncul di sini secara real-time...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ kata",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ karakter",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 Ringkasan AI",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Pendek",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Sedang",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Panjang",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Umum",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Poin Kunci",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Terperinci",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Buat Ringkasan",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "Ringkasan yang dibuat AI akan muncul di sini...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Ekspor",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Simpan sebagai TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Salin ke Clipboard",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Transkripsi suara real-time dengan ringkasan cerdas",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Kesalahan: Browser Anda tidak mendukung akses mikrofon",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Kesalahan: Izin mikrofon ditolak. Harap izinkan akses mikrofon.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Kesalahan: Tidak ada ucapan terdeteksi. Coba berbicara lebih dekat ke mikrofon.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Kesalahan: Tidak dapat mengakses mikrofon. Periksa apakah sedang digunakan oleh aplikasi lain.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Kesalahan: Masalah jaringan. Periksa koneksi internet Anda.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Perekaman terganggu.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Kesalahan: Tidak ditemukan perangkat mikrofon.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Kesalahan: Mikrofon sedang digunakan oleh aplikasi lain.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Kesalahan: Konteks tidak aman (gunakan HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Kesalahan memulai perekaman",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Browser Anda tidak mendukung pengenalan ucapan. Coba Chrome atau Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Pengenalan ucapan tidak tersedia di browser Anda.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Tidak ada teks untuk diringkas.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Tidak ada konten untuk disimpan.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Tidak ada konten untuk disalin.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Konten disalin ke clipboard.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Kesalahan menyalin ke clipboard.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Terjadi kesalahan saat membuat ringkasan.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Harap izinkan akses mikrofon di pengaturan browser Anda.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Kami memerlukan izin. Jendela akan terbuka untuk memberikan akses mikrofon...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Izin diberikan. Memulai...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Izin tidak diberikan.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== TEKS TRANSKRIPSI ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== RINGKASAN ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Dibuat pada:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Poin Kunci:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Ringkasan Terperinci:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Ringkasan:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Tidak dapat membuat ringkasan dari teks yang diberikan.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Izinkan akses mikrofon",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Klik \"Izinkan\" saat Chrome menampilkan dialog izin. Jika tidak muncul, tekan tombol di bawah.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Minta izin",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Ekstensi Transkripsi Suara + AI telah diinstal",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Meminta izin mikrofon dari skrip latar belakang...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Bahasa Suara:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

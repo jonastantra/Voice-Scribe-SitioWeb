@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "رونویسی صوتی + خلاصه‌سازی هوش مصنوعی",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "صدای خود را به متن تبدیل کنید و خلاصه‌های هوشمند هوش مصنوعی ایجاد کنید",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "رونویسی صوتی + هوش مصنوعی",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 رونویسی صوتی + هوش مصنوعی",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "تبدیل صدا به متن با خلاصه",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ ضبط صدا",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "شروع ضبط",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "توقف ضبط",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "پاک کردن همه",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "آماده برای ضبط",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "در حال ضبط...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "ضبط متوقف شد",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "درخواست مجوزها...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "مجوزها با موفقیت اعطا شد",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "شروع ضبط...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 متن رونویسی شده",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "رونویسی در زمان واقعی...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "متن رونویسی شده در اینجا به صورت زمان واقعی ظاهر می‌شود...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ کلمه",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ کاراکتر",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 خلاصه هوش مصنوعی",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "کوتاه",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "متوسط",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "بلند",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "عمومی",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "نکات کلیدی",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "دقیق",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "ایجاد خلاصه",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "خلاصه ایجاد شده توسط هوش مصنوعی در اینجا ظاهر می‌شود...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 صادرات",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "ذخیره به عنوان TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "کپی به کلیپ‌بورد",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ رونویسی صوتی زمان واقعی با خلاصه هوشمند",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "خطا: مرورگر شما از دسترسی به میکروفون پشتیبانی نمی‌کند",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "خطا: مجوزهای میکروفون رد شد. لطفاً دسترسی به میکروفون را مجاز کنید.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "خطا: گفتار شناسایی نشد. سعی کنید نزدیک‌تر به میکروفون صحبت کنید.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "خطا: دسترسی به میکروفون امکان‌پذیر نیست. بررسی کنید که توسط برنامه دیگری استفاده نمی‌شود.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "خطا: مشکل شبکه. اتصال اینترنت خود را بررسی کنید.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "ضبط قطع شد.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "خطا: دستگاه میکروفون یافت نشد.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "خطا: میکروفون توسط برنامه دیگری استفاده می‌شود.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "خطا: زمینه امن نیست (از HTTPS استفاده کنید).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "خطا در شروع ضبط",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "مرورگر شما از تشخیص گفتار پشتیبانی نمی‌کند. Chrome یا Edge را امتحان کنید.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "تشخیص گفتار در مرورگر شما در دسترس نیست.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "متنی برای خلاصه‌سازی وجود ندارد.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "محتوایی برای ذخیره وجود ندارد.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "محتوایی برای کپی وجود ندارد.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "محتوا در کلیپ‌بورد کپی شد.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "خطا در کپی به کلیپ‌بورد.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "خطایی در ایجاد خلاصه رخ داد.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "لطفاً دسترسی به میکروفون را در تنظیمات مرورگر خود مجاز کنید.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "به مجوزها نیاز داریم. پنجره‌ای برای اعطای دسترسی به میکروفون باز می‌شود...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "مجوزها اعطا شد. در حال شروع...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "مجوزها اعطا نشد.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== متن رونویسی شده ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== خلاصه ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "ایجاد شده در:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "نکات کلیدی:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "خلاصه دقیق:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "خلاصه:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "نتوانست خلاصه‌ای از متن ارائه شده ایجاد کند.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "اجازه دسترسی به میکروفون",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "وقتی Chrome گفتگوی مجوزها را نشان داد روی \"اجازه\" کلیک کنید. اگر ظاهر نشد، دکمه زیر را فشار دهید.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "درخواست مجوز",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "افزونه رونویسی صوتی + هوش مصنوعی نصب شد",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "درخواست مجوزهای میکروفون از اسکریپت پس‌زمینه...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ زبان صوتی:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

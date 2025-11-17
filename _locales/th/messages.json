@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "ถอดเสียงเป็นข้อความ + สรุปด้วย AI",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "แปลงเสียงของคุณเป็นข้อความและสร้างบทสรุปอัจฉริยะด้วย AI",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "ถอดเสียงเป็นข้อความ + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 ถอดเสียงเป็นข้อความ + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "เสียงเป็นข้อความพร้อมสรุป",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ บันทึกเสียง",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "เริ่มบันทึก",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "หยุดบันทึก",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "ล้างทั้งหมด",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "พร้อมบันทึก",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "กำลังบันทึก...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "หยุดบันทึกแล้ว",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "กำลังขออนุญาต...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "อนุญาตเรียบร้อยแล้ว",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "กำลังเริ่มบันทึก...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 ข้อความที่ถอดเสียง",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "กำลังถอดเสียงแบบเรียลไทม์...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "ข้อความที่ถอดเสียงจะแสดงที่นี่แบบเรียลไทม์...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ คำ",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ ตัวอักษร",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 สรุปด้วย AI",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "สั้น",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "ปานกลาง",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "ยาว",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "ทั่วไป",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "ประเด็นสำคัญ",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "ละเอียด",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "สร้างบทสรุป",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "บทสรุปที่สร้างด้วย AI จะแสดงที่นี่...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 ส่งออก",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "บันทึกเป็น TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "คัดลอกไปยังคลิปบอร์ด",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ ถอดเสียงเป็นข้อความแบบเรียลไทม์พร้อมบทสรุปอัจฉริยะ",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "ข้อผิดพลาด: เบราว์เซอร์ของคุณไม่รองรับการเข้าถึงไมโครโฟน",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "ข้อผิดพลาด: ไม่อนุญาตการเข้าถึงไมโครโฟน โปรดอนุญาตการเข้าถึงไมโครโฟน",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "ข้อผิดพลาด: ไม่ตรวจพบเสียงพูด ลองพูดใกล้ไมโครโฟนมากขึ้น",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "ข้อผิดพลาด: ไม่สามารถเข้าถึงไมโครโฟน ตรวจสอบว่ามีแอปพลิเคชันอื่นใช้งานอยู่หรือไม่",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "ข้อผิดพลาด: ปัญหาเครือข่าย ตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "การบันทึกถูกขัดจังหวะ",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "ข้อผิดพลาด: ไม่พบอุปกรณ์ไมโครโฟน",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "ข้อผิดพลาด: ไมโครโฟนกำลังถูกใช้งานโดยแอปพลิเคชันอื่น",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "ข้อผิดพลาด: บริบทไม่ปลอดภัย (ใช้ HTTPS)",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "ข้อผิดพลาดในการเริ่มบันทึก",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "เบราว์เซอร์ของคุณไม่รองรับการรู้จำเสียง ลอง Chrome หรือ Edge",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "การรู้จำเสียงไม่พร้อมใช้งานในเบราว์เซอร์ของคุณ",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "ไม่มีข้อความที่จะสรุป",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "ไม่มีเนื้อหาที่จะบันทึก",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "ไม่มีเนื้อหาที่จะคัดลอก",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "คัดลอกเนื้อหาไปยังคลิปบอร์ดแล้ว",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "ข้อผิดพลาดในการคัดลอกไปยังคลิปบอร์ด",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "เกิดข้อผิดพลาดขณะสร้างบทสรุป",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "โปรดอนุญาตการเข้าถึงไมโครโฟนในการตั้งค่าเบราว์เซอร์ของคุณ",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "เราต้องการอนุญาต หน้าต่างจะเปิดขึ้นเพื่ออนุญาตการเข้าถึงไมโครโฟน...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "อนุญาตแล้ว กำลังเริ่มต้น...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "ไม่ได้รับอนุญาต",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== ข้อความที่ถอดเสียง ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== บทสรุป ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "สร้างเมื่อ:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "ประเด็นสำคัญ:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "บทสรุปโดยละเอียด:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "บทสรุป:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "ไม่สามารถสร้างบทสรุปจากข้อความที่ให้มา",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "อนุญาตการเข้าถึงไมโครโฟน",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "คลิก \"อนุญาต\" เมื่อ Chrome แสดงกล่องโต้ตอบอนุญาต หากไม่ปรากฏ กดปุ่มด้านล่าง",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "ขออนุญาต",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "ติดตั้งส่วนขยายถอดเสียงเป็นข้อความ + AI แล้ว",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "กำลังขออนุญาตไมโครโฟนจากสคริปต์พื้นหลัง...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ ภาษาเสียง:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

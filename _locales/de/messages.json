@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Sprachtranskription + KI-Zusammenfassung",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Wandeln Sie Ihre Stimme in Text um und erstellen Sie intelligente KI-Zusammenfassungen",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Sprachtranskription + KI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Sprachtranskription + KI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Sprache zu Text mit Zusammenfassung",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Sprachaufnahme",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Aufnahme starten",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Aufnahme beenden",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Alles löschen",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Bereit zur Aufnahme",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Aufnahme läuft...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Aufnahme beendet",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Berechtigungen werden angefordert...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Berechtigungen erfolgreich erteilt",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Aufnahme wird gestartet...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Transkribierter Text",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Transkription in Echtzeit...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Der transkribierte Text erscheint hier in Echtzeit...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ Wörter",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ Zeichen",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 KI-Zusammenfassung",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Kurz",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Mittel",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Lang",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Allgemein",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Hauptpunkte",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Detailliert",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Zusammenfassung erstellen",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "Die KI-generierte Zusammenfassung erscheint hier...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Export",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Als TXT speichern",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "In Zwischenablage kopieren",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Echtzeit-Sprachtranskription mit intelligenter Zusammenfassung",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Fehler: Ihr Browser unterstützt keinen Mikrofonzugriff",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Fehler: Mikrofonberechtigungen verweigert. Bitte erlauben Sie den Mikrofonzugriff.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Fehler: Keine Sprache erkannt. Versuchen Sie näher am Mikrofon zu sprechen.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Fehler: Kein Zugriff auf Mikrofon. Prüfen Sie, ob es von einer anderen Anwendung verwendet wird.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Fehler: Netzwerkproblem. Überprüfen Sie Ihre Internetverbindung.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Aufnahme unterbrochen.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Fehler: Kein Mikrofon gefunden.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Fehler: Mikrofon wird von einer anderen Anwendung verwendet.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Fehler: Kontext ist nicht sicher (HTTPS verwenden).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Fehler beim Starten der Aufnahme",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Ihr Browser unterstützt keine Spracherkennung. Probieren Sie Chrome oder Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Spracherkennung ist in Ihrem Browser nicht verfügbar.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Kein Text zum Zusammenfassen.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Kein Inhalt zum Speichern.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Kein Inhalt zum Kopieren.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Inhalt in Zwischenablage kopiert.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Fehler beim Kopieren in die Zwischenablage.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Fehler beim Erstellen der Zusammenfassung.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Bitte erlauben Sie den Mikrofonzugriff in Ihren Browsereinstellungen.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Wir benötigen Berechtigungen. Ein Fenster wird geöffnet, um Mikrofonzugriff zu gewähren...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Berechtigungen erteilt. Wird gestartet...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Berechtigungen nicht erteilt.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== TRANSKRIBIERTER TEXT ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== ZUSAMMENFASSUNG ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Erstellt am:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Hauptpunkte:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Detaillierte Zusammenfassung:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Zusammenfassung:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Konnte keine Zusammenfassung aus dem bereitgestellten Text erstellen.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Mikrofonzugriff erlauben",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Klicken Sie auf \"Zulassen\", wenn Chrome den Berechtigungsdialog anzeigt. Falls er nicht erscheint, drücken Sie die Schaltfläche unten.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Berechtigung anfordern",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Sprachtranskription + KI Erweiterung installiert",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Mikrofonberechtigungen werden vom Hintergrundskript angefordert...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Sprachsprache:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Bewerten Sie uns & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Bewerten Sie uns:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Benötigen Sie Hilfe?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Support-E-Mail kopieren",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Teilen",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support-E-Mail in Zwischenablage kopiert!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Vielen Dank für Ihre Bewertung!",
+    "description": "Thank you for rating message"
+  }
+}

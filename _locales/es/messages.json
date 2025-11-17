@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Transcripción de Voz + Resumen IA",
+    "description": "Nombre de la extensión"
+  },
+  "extDescription": {
+    "message": "Convierte tu voz a texto y genera resúmenes inteligentes con IA",
+    "description": "Descripción de la extensión"
+  },
+  "extTitle": {
+    "message": "Transcripción de Voz + IA",
+    "description": "Título del popup"
+  },
+  "headerTitle": {
+    "message": "🎤 Transcripción de Voz + IA",
+    "description": "Título del encabezado"
+  },
+  "headerSubtitle": {
+    "message": "Voz a texto con resumen",
+    "description": "Subtítulo del encabezado"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Grabación de Voz",
+    "description": "Título de la sección de grabación"
+  },
+  "btnStartRecording": {
+    "message": "Iniciar Grabación",
+    "description": "Botón para iniciar grabación"
+  },
+  "btnStopRecording": {
+    "message": "Detener Grabación",
+    "description": "Botón para detener grabación"
+  },
+  "btnClearAll": {
+    "message": "Limpiar Todo",
+    "description": "Botón para limpiar todo"
+  },
+  "statusReady": {
+    "message": "Listo para grabar",
+    "description": "Estado: listo"
+  },
+  "statusRecording": {
+    "message": "Grabando...",
+    "description": "Estado: grabando"
+  },
+  "statusStopped": {
+    "message": "Grabación detenida",
+    "description": "Estado: detenido"
+  },
+  "statusRequestingPermissions": {
+    "message": "Solicitando permisos...",
+    "description": "Estado: solicitando permisos"
+  },
+  "statusPermissionsGranted": {
+    "message": "Permisos obtenidos correctamente",
+    "description": "Estado: permisos concedidos"
+  },
+  "statusStarting": {
+    "message": "Iniciando grabación...",
+    "description": "Estado: iniciando"
+  },
+  "sectionTranscription": {
+    "message": "📝 Texto Transcrito",
+    "description": "Título de la sección de transcripción"
+  },
+  "realTimeIndicator": {
+    "message": "Transcribiendo en tiempo real...",
+    "description": "Indicador de transcripción en tiempo real"
+  },
+  "transcriptionPlaceholder": {
+    "message": "El texto transcrito aparecerá aquí en tiempo real...",
+    "description": "Placeholder del área de transcripción"
+  },
+  "wordCount": {
+    "message": "$COUNT$ palabras",
+    "description": "Contador de palabras",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ caracteres",
+    "description": "Contador de caracteres",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 Resumen con IA",
+    "description": "Título de la sección de resumen"
+  },
+  "summaryLengthShort": {
+    "message": "Corto",
+    "description": "Opción de longitud: corto"
+  },
+  "summaryLengthMedium": {
+    "message": "Medio",
+    "description": "Opción de longitud: medio"
+  },
+  "summaryLengthLong": {
+    "message": "Largo",
+    "description": "Opción de longitud: largo"
+  },
+  "summaryStyleGeneral": {
+    "message": "General",
+    "description": "Estilo de resumen: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Puntos clave",
+    "description": "Estilo de resumen: puntos clave"
+  },
+  "summaryStyleDetailed": {
+    "message": "Detallado",
+    "description": "Estilo de resumen: detallado"
+  },
+  "btnGenerateSummary": {
+    "message": "Generar Resumen",
+    "description": "Botón para generar resumen"
+  },
+  "summaryPlaceholder": {
+    "message": "El resumen generado por IA aparecerá aquí...",
+    "description": "Placeholder del área de resumen"
+  },
+  "sectionExport": {
+    "message": "💾 Exportar",
+    "description": "Título de la sección de exportación"
+  },
+  "btnSaveAsTxt": {
+    "message": "Guardar como TXT",
+    "description": "Botón para guardar como TXT"
+  },
+  "btnCopyToClipboard": {
+    "message": "Copiar al Portapapeles",
+    "description": "Botón para copiar al portapapeles"
+  },
+  "footerText": {
+    "message": "✨ Transcripción de voz en tiempo real con resumen inteligente",
+    "description": "Texto del pie de página"
+  },
+  "errorNoMicrophone": {
+    "message": "Error: Tu navegador no soporta acceso al micrófono",
+    "description": "Error: navegador no soporta micrófono"
+  },
+  "errorPermissionDenied": {
+    "message": "Error: Permisos de micrófono denegados. Por favor, permite el acceso al micrófono.",
+    "description": "Error: permisos denegados"
+  },
+  "errorNoSpeech": {
+    "message": "Error: No se detectó voz. Intenta hablar más cerca del micrófono.",
+    "description": "Error: no se detectó voz"
+  },
+  "errorAudioCapture": {
+    "message": "Error: No se puede acceder al micrófono. Verifica que no esté siendo usado por otra aplicación.",
+    "description": "Error: no se puede acceder al micrófono"
+  },
+  "errorNetwork": {
+    "message": "Error: Problema de red. Verifica tu conexión a internet.",
+    "description": "Error: problema de red"
+  },
+  "errorAborted": {
+    "message": "Grabación interrumpida.",
+    "description": "Error: grabación interrumpida"
+  },
+  "errorNoDevice": {
+    "message": "Error: No se encontró ningún dispositivo de micrófono.",
+    "description": "Error: no se encontró dispositivo"
+  },
+  "errorDeviceBusy": {
+    "message": "Error: El micrófono está siendo usado por otra aplicación.",
+    "description": "Error: dispositivo ocupado"
+  },
+  "errorNotSecure": {
+    "message": "Error: El contexto no es seguro (usa HTTPS).",
+    "description": "Error: contexto no seguro"
+  },
+  "errorStartRecording": {
+    "message": "Error al iniciar la grabación",
+    "description": "Error: no se pudo iniciar grabación"
+  },
+  "alertNoSupport": {
+    "message": "Tu navegador no soporta el reconocimiento de voz. Prueba con Chrome o Edge.",
+    "description": "Alerta: navegador no compatible"
+  },
+  "alertNotAvailable": {
+    "message": "El reconocimiento de voz no está disponible en tu navegador.",
+    "description": "Alerta: reconocimiento no disponible"
+  },
+  "alertNoTextToSummarize": {
+    "message": "No hay texto para resumir.",
+    "description": "Alerta: no hay texto para resumir"
+  },
+  "alertNoContentToSave": {
+    "message": "No hay contenido para guardar.",
+    "description": "Alerta: no hay contenido para guardar"
+  },
+  "alertNoContentToCopy": {
+    "message": "No hay contenido para copiar.",
+    "description": "Alerta: no hay contenido para copiar"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Contenido copiado al portapapeles.",
+    "description": "Alerta: copiado al portapapeles"
+  },
+  "alertCopyError": {
+    "message": "Error al copiar al portapapeles.",
+    "description": "Alerta: error al copiar"
+  },
+  "alertSummaryError": {
+    "message": "Ocurrió un error al generar el resumen.",
+    "description": "Alerta: error al generar resumen"
+  },
+  "alertPermissionRequest": {
+    "message": "Por favor, permite el acceso al micrófono en la configuración del navegador.",
+    "description": "Alerta: solicitud de permisos"
+  },
+  "statusPermissionWindow": {
+    "message": "Necesitamos permisos. Se abrirá una ventana para conceder el micrófono...",
+    "description": "Estado: ventana de permisos"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Permisos concedidos. Iniciando...",
+    "description": "Estado: permisos concedidos desde ventana"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Permisos no concedidos.",
+    "description": "Estado: permisos no concedidos"
+  },
+  "transcribedTextHeader": {
+    "message": "=== TEXTO TRANSCRITO ===",
+    "description": "Encabezado de texto transcrito en exportación"
+  },
+  "summaryHeader": {
+    "message": "=== RESUMEN ===",
+    "description": "Encabezado de resumen en exportación"
+  },
+  "generatedOn": {
+    "message": "Generado el:",
+    "description": "Texto 'Generado el' en exportación"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Puntos clave:",
+    "description": "Texto para resumen local en puntos clave"
+  },
+  "localSummaryDetailed": {
+    "message": "Resumen detallado:",
+    "description": "Texto para resumen local detallado"
+  },
+  "localSummaryGeneral": {
+    "message": "Resumen:",
+    "description": "Texto para resumen local general"
+  },
+  "localSummaryError": {
+    "message": "No se pudo generar un resumen del texto proporcionado.",
+    "description": "Error en resumen local"
+  },
+  "permissionsTitle": {
+    "message": "Permitir acceso al micrófono",
+    "description": "Título de la ventana de permisos"
+  },
+  "permissionsDescription": {
+    "message": "Haz clic en \"Permitir\" cuando Chrome muestre el diálogo de permisos. Si no aparece, presiona el botón de abajo.",
+    "description": "Descripción de la ventana de permisos"
+  },
+  "permissionsButton": {
+    "message": "Solicitar permiso",
+    "description": "Botón de solicitar permiso"
+  },
+  "backgroundInstalled": {
+    "message": "Extensión Transcripción de Voz + IA instalada",
+    "description": "Mensaje de instalación en background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Solicitando permisos del micrófono desde background script...",
+    "description": "Mensaje de solicitud de permisos en background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Idioma de voz:",
+    "description": "Etiqueta del selector de idioma de voz"
+  },
+  "sectionRating": {
+    "message": "⭐ Califícanos y Soporte",
+    "description": "Título de la sección de calificación"
+  },
+  "rateUsTitle": {
+    "message": "Califícanos:",
+    "description": "Título de calificación"
+  },
+  "needHelpTitle": {
+    "message": "¿Necesitas ayuda?",
+    "description": "Título de necesitas ayuda"
+  },
+  "copySupportEmail": {
+    "message": "Copiar email de soporte",
+    "description": "Botón copiar email de soporte"
+  },
+  "shareApp": {
+    "message": "Compartir",
+    "description": "Botón compartir"
+  },
+  "emailCopied": {
+    "message": "¡Email de soporte copiado al portapapeles!",
+    "description": "Confirmación de email copiado"
+  },
+  "thankYouRating": {
+    "message": "¡Gracias por tu calificación!",
+    "description": "Mensaje de agradecimiento por calificación"
+  }
+}

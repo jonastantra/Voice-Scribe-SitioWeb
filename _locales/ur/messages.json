@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "آواز کی نقل + AI خلاصہ",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "اپنی آواز کو متن میں تبدیل کریں اور ذہین AI خلاصے بنائیں",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "آواز کی نقل + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 آواز کی نقل + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "خلاصے کے ساتھ آواز سے متن",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ آواز کی ریکارڈنگ",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "ریکارڈنگ شروع کریں",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "ریکارڈنگ بند کریں",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "سب صاف کریں",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "ریکارڈ کرنے کے لیے تیار",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "ریکارڈ ہو رہا ہے...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "ریکارڈنگ رک گئی",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "اجازت کی درخواست کی جا رہی ہے...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "اجازت کامیابی سے دی گئی",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "ریکارڈنگ شروع ہو رہی ہے...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 نقل شدہ متن",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "حقیقی وقت میں نقل ہو رہا ہے...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "نقل شدہ متن یہاں حقیقی وقت میں ظاہر ہوگا...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ الفاظ",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ حروف",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI خلاصہ",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "مختصر",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "درمیانہ",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "طویل",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "عام",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "اہم نکات",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "تفصیلی",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "خلاصہ بنائیں",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI سے بنایا گیا خلاصہ یہاں ظاہر ہوگا...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 برآمد",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "TXT کے طور پر محفوظ کریں",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "کلپ بورڈ میں کاپی کریں",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ ذہین خلاصے کے ساتھ حقیقی وقت آواز کی نقل",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "خرابی: آپ کا براؤزر مائیکروفون تک رسائی کی حمایت نہیں کرتا",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "خرابی: مائیکروفون کی اجازت مسترد کر دی گئی۔ براہ کرم مائیکروفون تک رسائی کی اجازت دیں۔",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "خرابی: کوئی تقریر معلوم نہیں ہوئی۔ مائیکروفون کے قریب بولنے کی کوشش کریں۔",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "خرابی: مائیکروفون تک رسائی نہیں ہو سکتی۔ چیک کریں کہ یہ کسی دوسری ایپلیکیشن کے ذریعے استعمال نہیں ہو رہا۔",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "خرابی: نیٹ ورک کا مسئلہ۔ اپنے انٹرنیٹ کنکشن کو چیک کریں۔",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "ریکارڈنگ میں خلل پڑا۔",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "خرابی: کوئی مائیکروفون ڈیوائس نہیں ملی۔",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "خرابی: مائیکروفون کسی دوسری ایپلیکیشن کے ذریعے استعمال ہو رہا ہے۔",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "خرابی: سیاق و سباق محفوظ نہیں ہے (HTTPS استعمال کریں)۔",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "ریکارڈنگ شروع کرنے میں خرابی",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "آپ کا براؤزر تقریر کی شناخت کی حمایت نہیں کرتا۔ Chrome یا Edge آزمائیں۔",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "آپ کے براؤزر میں تقریر کی شناخت دستیاب نہیں ہے۔",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "خلاصہ کرنے کے لیے کوئی متن نہیں۔",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "محفوظ کرنے کے لیے کوئی مواد نہیں۔",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "کاپی کرنے کے لیے کوئی مواد نہیں۔",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "مواد کلپ بورڈ میں کاپی ہو گیا۔",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "کلپ بورڈ میں کاپی کرنے میں خرابی۔",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "خلاصہ بناتے وقت ایک خرابی پیش آئی۔",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "براہ کرم اپنے براؤزر کی ترتیبات میں مائیکروفون تک رسائی کی اجازت دیں۔",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "ہمیں اجازت کی ضرورت ہے۔ مائیکروفون تک رسائی دینے کے لیے ایک ونڈو کھلے گی...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "اجازت دی گئی۔ شروع ہو رہا ہے...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "اجازت نہیں دی گئی۔",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== نقل شدہ متن ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== خلاصہ ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "بنایا گیا:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "اہم نکات:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "تفصیلی خلاصہ:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "خلاصہ:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "فراہم کردہ متن سے خلاصہ نہیں بنایا جا سکا۔",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "مائیکروفون تک رسائی کی اجازت دیں",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "جب Chrome اجازت کا ڈائیلاگ دکھائے تو \"اجازت دیں\" پر کلک کریں۔ اگر یہ ظاہر نہیں ہوتا تو نیچے کا بٹن دبائیں۔",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "اجازت کی درخواست کریں",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "آواز کی نقل + AI ایکسٹینشن انسٹال ہو گئی",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "پس منظر اسکرپٹ سے مائیکروفون کی اجازت کی درخواست کی جا رہی ہے...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ آواز کی زبان:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

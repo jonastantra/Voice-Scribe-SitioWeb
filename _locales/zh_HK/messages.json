@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "語音轉錄 + AI 摘要",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "將您的語音轉換為文字並生成智能 AI 摘要",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "語音轉錄 + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 語音轉錄 + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "語音轉文字及摘要",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ 語音錄音",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "開始錄音",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "停止錄音",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "清除全部",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "準備錄音",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "錄音中...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "錄音已停止",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "正在請求權限...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "權限已成功授予",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "正在啟動錄音...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 已轉錄文字",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "即時轉錄中...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "已轉錄的文字將即時顯示在此...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ 字",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ 個字符",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI 摘要",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "簡短",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "中等",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "詳細",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "一般",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "重點",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "詳盡",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "生成摘要",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI 生成的摘要將顯示在此...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 匯出",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "儲存為 TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "複製到剪貼簿",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ 具智能摘要的即時語音轉錄",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "錯誤：您的瀏覽器不支援麥克風存取",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "錯誤：麥克風權限被拒絕。請允許麥克風存取。",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "錯誤：未檢測到語音。請嘗試靠近麥克風說話。",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "錯誤：無法存取麥克風。請檢查是否正被其他應用程式使用。",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "錯誤：網絡問題。請檢查您的互聯網連接。",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "錄音被中斷。",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "錯誤：未找到麥克風裝置。",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "錯誤：麥克風正被其他應用程式使用。",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "錯誤：環境不安全（請使用 HTTPS）。",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "啟動錄音時發生錯誤",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "您的瀏覽器不支援語音識別。請嘗試 Chrome 或 Edge。",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "您的瀏覽器不提供語音識別功能。",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "沒有文字可供摘要。",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "沒有內容可供儲存。",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "沒有內容可供複製。",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "內容已複製到剪貼簿。",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "複製到剪貼簿時發生錯誤。",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "生成摘要時發生錯誤。",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "請在瀏覽器設定中允許麥克風存取。",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "我們需要權限。將開啟視窗以授予麥克風存取...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "權限已授予。正在啟動...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "權限未授予。",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== 已轉錄文字 ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== 摘要 ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "生成於：",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "重點：",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "詳細摘要：",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "摘要：",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "無法從提供的文字生成摘要。",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "允許麥克風存取",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "當 Chrome 顯示權限對話框時，請點擊「允許」。如果未出現，請按下方按鈕。",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "請求權限",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "語音轉錄 + AI 擴充功能已安裝",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "正從背景腳本請求麥克風權限...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ 語音語言：",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

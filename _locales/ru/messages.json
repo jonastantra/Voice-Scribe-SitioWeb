@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Транскрипция голоса + ИИ резюме",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Преобразуйте свой голос в текст и создавайте интеллектуальные резюме с помощью ИИ",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Транскрипция голоса + ИИ",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Транскрипция голоса + ИИ",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Голос в текст с резюме",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Запись голоса",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Начать запись",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Остановить запись",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Очистить всё",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Готов к записи",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Идёт запись...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Запись остановлена",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Запрос разрешений...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Разрешения успешно предоставлены",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Начало записи...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Транскрибированный текст",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Транскрипция в реальном времени...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Транскрибированный текст появится здесь в реальном времени...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ слов",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ символов",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 ИИ резюме",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Короткое",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Среднее",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Длинное",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Общее",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Ключевые моменты",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Подробное",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Создать резюме",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "Резюме, созданное ИИ, появится здесь...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Экспорт",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Сохранить как TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Копировать в буфер обмена",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Транскрипция голоса в реальном времени с интеллектуальным резюме",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Ошибка: Ваш браузер не поддерживает доступ к микрофону",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Ошибка: Доступ к микрофону запрещён. Пожалуйста, разрешите доступ к микрофону.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Ошибка: Речь не обнаружена. Попробуйте говорить ближе к микрофону.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Ошибка: Не удаётся получить доступ к микрофону. Проверьте, не используется ли он другим приложением.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Ошибка: Проблема с сетью. Проверьте подключение к интернету.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Запись прервана.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Ошибка: Микрофон не найден.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Ошибка: Микрофон используется другим приложением.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Ошибка: Контекст небезопасен (используйте HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Ошибка при начале записи",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Ваш браузер не поддерживает распознавание речи. Попробуйте Chrome или Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Распознавание речи недоступно в вашем браузере.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Нет текста для резюмирования.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Нет содержимого для сохранения.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Нет содержимого для копирования.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Содержимое скопировано в буфер обмена.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Ошибка при копировании в буфер обмена.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Произошла ошибка при создании резюме.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Пожалуйста, разрешите доступ к микрофону в настройках браузера.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Нам нужны разрешения. Откроется окно для предоставления доступа к микрофону...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Разрешения предоставлены. Запуск...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Разрешения не предоставлены.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== ТРАНСКРИБИРОВАННЫЙ ТЕКСТ ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== РЕЗЮМЕ ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Создано:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Ключевые моменты:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Подробное резюме:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Резюме:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Не удалось создать резюме из предоставленного текста.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Разрешить доступ к микрофону",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Нажмите \"Разрешить\", когда Chrome покажет диалог разрешений. Если он не появится, нажмите кнопку ниже.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Запросить разрешение",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Расширение Транскрипция голоса + ИИ установлено",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Запрос разрешений микрофона из фонового скрипта...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Язык голоса:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Оцените нас и Поддержка",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Оцените нас:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Нужна помощь?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Скопировать email поддержки",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Поделиться",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Email поддержки скопирован в буфер обмена!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Спасибо за вашу оценку!",
+    "description": "Thank you for rating message"
+  }
+}

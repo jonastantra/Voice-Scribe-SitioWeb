@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "वॉइस ट्रांसक्रिप्शन + AI सारांश",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "अपनी आवाज़ को टेक्स्ट में बदलें और बुद्धिमान AI सारांश बनाएं",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "वॉइस ट्रांसक्रिप्शन + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 वॉइस ट्रांसक्रिप्शन + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "आवाज़ से टेक्स्ट सारांश के साथ",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ वॉइस रिकॉर्डिंग",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "रिकॉर्डिंग शुरू करें",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "रिकॉर्डिंग रोकें",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "सब साफ़ करें",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "रिकॉर्ड करने के लिए तैयार",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "रिकॉर्डिंग हो रही है...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "रिकॉर्डिंग रुक गई",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "अनुमति का अनुरोध किया जा रहा है...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "अनुमति सफलतापूर्वक प्रदान की गई",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "रिकॉर्डिंग शुरू की जा रही है...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 ट्रांसक्राइब किया गया टेक्स्ट",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "रीयल-टाइम में ट्रांसक्राइब हो रहा है...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "ट्रांसक्राइब किया गया टेक्स्ट यहाँ रीयल-टाइम में दिखाई देगा...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ शब्द",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ वर्ण",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI सारांश",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "छोटा",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "मध्यम",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "लंबा",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "सामान्य",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "मुख्य बिंदु",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "विस्तृत",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "सारांश बनाएं",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI द्वारा बनाया गया सारांश यहाँ दिखाई देगा...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 निर्यात करें",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "TXT के रूप में सहेजें",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "क्लिपबोर्ड पर कॉपी करें",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ बुद्धिमान सारांश के साथ रीयल-टाइम वॉइस ट्रांसक्रिप्शन",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "त्रुटि: आपका ब्राउज़र माइक्रोफ़ोन एक्सेस का समर्थन नहीं करता है",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "त्रुटि: माइक्रोफ़ोन अनुमति अस्वीकृत। कृपया माइक्रोफ़ोन एक्सेस की अनुमति दें।",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "त्रुटि: कोई आवाज़ नहीं सुनाई दी। कृपया माइक्रोफ़ोन के पास बोलें।",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "त्रुटि: माइक्रोफ़ोन तक पहुँच नहीं हो पा रही है। जांचें कि यह किसी अन्य एप्लिकेशन द्वारा उपयोग नहीं किया जा रहा है।",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "त्रुटि: नेटवर्क समस्या। अपना इंटरनेट कनेक्शन जांचें।",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "रिकॉर्डिंग बाधित हुई।",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "त्रुटि: कोई माइक्रोफ़ोन डिवाइस नहीं मिला।",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "त्रुटि: माइक्रोफ़ोन किसी अन्य एप्लिकेशन द्वारा उपयोग किया जा रहा है।",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "त्रुटि: संदर्भ सुरक्षित नहीं है (HTTPS का उपयोग करें)।",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "रिकॉर्डिंग शुरू करने में त्रुटि",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "आपका ब्राउज़र स्पीच रिकग्निशन का समर्थन नहीं करता है। Chrome या Edge आज़माएं।",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "आपके ब्राउज़र में स्पीच रिकग्निशन उपलब्ध नहीं है।",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "सारांश बनाने के लिए कोई टेक्स्ट नहीं है।",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "सहेजने के लिए कोई सामग्री नहीं है।",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "कॉपी करने के लिए कोई सामग्री नहीं है।",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "सामग्री क्लिपबोर्ड पर कॉपी की गई।",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "क्लिपबोर्ड पर कॉपी करने में त्रुटि।",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "सारांश बनाते समय त्रुटि हुई।",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "कृपया अपने ब्राउज़र सेटिंग्स में माइक्रोफ़ोन एक्सेस की अनुमति दें।",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "हमें अनुमतियों की आवश्यकता है। माइक्रोफ़ोन एक्सेस देने के लिए एक विंडो खुलेगी...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "अनुमति प्रदान की गई। शुरू हो रहा है...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "अनुमति प्रदान नहीं की गई।",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== ट्रांसक्राइब किया गया टेक्स्ट ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== सारांश ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "बनाया गया:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "मुख्य बिंदु:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "विस्तृत सारांश:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "सारांश:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "प्रदान किए गए टेक्स्ट से सारांश नहीं बनाया जा सका।",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "माइक्रोफ़ोन एक्सेस की अनुमति दें",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "जब Chrome अनुमति डायलॉग दिखाए तो \"अनुमति दें\" पर क्लिक करें। यदि यह दिखाई नहीं देता है, तो नीचे दिए गए बटन को दबाएं।",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "अनुमति का अनुरोध करें",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "वॉइस ट्रांसक्रिप्शन + AI एक्सटेंशन इंस्टॉल किया गया",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "बैकग्राउंड स्क्रिप्ट से माइक्रोफ़ोन अनुमतियों का अनुरोध किया जा रहा है...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ आवाज़ की भाषा:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ हमें रेटिंग दें & सहायता",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "हमें रेटिंग दें:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "मदद चाहिए?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "सपोर्ट ईमेल कॉपी करें",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "शेयर करें",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "सपोर्ट ईमेल क्लिपबोर्ड पर कॉपी किया गया!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "आपकी रेटिंग के लिए धन्यवाद!",
+    "description": "Thank you for rating message"
+  }
+}

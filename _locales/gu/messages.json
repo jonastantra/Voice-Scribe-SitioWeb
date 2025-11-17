@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "વૉઇસ ટ્રાન્સક્રિપ્શન + AI સારાંશ",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "તમારા અવાજને ટેક્સ્ટમાં રૂપાંતરિત કરો અને બુદ્ધિશાળી AI સારાંશ બનાવો",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "વૉઇસ ટ્રાન્સક્રિપ્શન + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 વૉઇસ ટ્રાન્સક્રિપ્શન + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "સારાંશ સાથે અવાજથી ટેક્સ્ટ",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ વૉઇસ રેકોર્ડિંગ",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "રેકોર્ડિંગ શરૂ કરો",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "રેકોર્ડિંગ બંધ કરો",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "બધું સાફ કરો",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "રેકોર્ડ કરવા માટે તૈયાર",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "રેકોર્ડ કરી રહ્યું છે...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "રેકોર્ડિંગ બંધ થયું",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "પરવાનગીઓની વિનંતી કરી રહ્યું છે...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "પરવાનગીઓ સફળતાપૂર્વક આપવામાં આવી",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "રેકોર્ડિંગ શરૂ કરી રહ્યું છે...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 ટ્રાન્સક્રાઇબ કરેલો ટેક્સ્ટ",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "રીઅલ-ટાઇમમાં ટ્રાન્સક્રાઇબ કરી રહ્યું છે...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "ટ્રાન્સક્રાઇબ કરેલો ટેક્સ્ટ અહીં રીઅલ-ટાઇમમાં દેખાશે...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ શબ્દો",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ અક્ષરો",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI સારાંશ",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "ટૂંકું",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "મધ્યમ",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "લાંબું",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "સામાન્ય",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "મુખ્ય મુદ્દાઓ",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "વિગતવાર",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "સારાંશ બનાવો",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI દ્વારા બનાવેલ સારાંશ અહીં દેખાશે...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 નિકાસ",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "TXT તરીકે સાચવો",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "ક્લિપબોર્ડ પર કૉપિ કરો",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ બુદ્ધિશાળી સારાંશ સાથે રીઅલ-ટાઇમ વૉઇસ ટ્રાન્સક્રિપ્શન",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "ભૂલ: તમારું બ્રાઉઝર માઇક્રોફોન ઍક્સેસને સપોર્ટ કરતું નથી",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "ભૂલ: માઇક્રોફોન પરવાનગીઓ નકારી કાઢવામાં આવી. કૃપા કરીને માઇક્રોફોન ઍક્સેસની મંજૂરી આપો.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "ભૂલ: કોઈ વાણી શોધાઈ નથી. માઇક્રોફોનની નજીક બોલવાનો પ્રયાસ કરો.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "ભૂલ: માઇક્રોફોનને ઍક્સેસ કરી શકાતું નથી. તપાસો કે તે અન્ય એપ્લિકેશન દ્વારા ઉપયોગમાં લેવાતું નથી.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "ભૂલ: નેટવર્ક સમસ્યા. તમારું ઇન્ટરનેટ કનેક્શન તપાસો.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "રેકોર્ડિંગ વિક્ષેપિત થયું.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "ભૂલ: કોઈ માઇક્રોફોન ઉપકરણ મળ્યું નથી.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "ભૂલ: માઇક્રોફોન અન્ય એપ્લિકેશન દ્વારા ઉપયોગમાં લેવાય છે.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "ભૂલ: સંદર્ભ સુરક્ષિત નથી (HTTPS નો ઉપયોગ કરો).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "રેકોર્ડિંગ શરૂ કરવામાં ભૂલ",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "તમારું બ્રાઉઝર સ્પીચ રેકગ્નિશનને સપોર્ટ કરતું નથી. Chrome અથવા Edge અજમાવો.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "તમારા બ્રાઉઝરમાં સ્પીચ રેકગ્નિશન ઉપલબ્ધ નથી.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "સારાંશ આપવા માટે કોઈ ટેક્સ્ટ નથી.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "સાચવવા માટે કોઈ સામગ્રી નથી.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "કૉપિ કરવા માટે કોઈ સામગ્રી નથી.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "સામગ્રી ક્લિપબોર્ડ પર કૉપિ કરવામાં આવી.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "ક્લિપબોર્ડ પર કૉપિ કરવામાં ભૂલ.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "સારાંશ બનાવતી વખતે એક ભૂલ આવી.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "કૃપા કરીને તમારા બ્રાઉઝર સેટિંગ્સમાં માઇક્રોફોન ઍક્સેસને મંજૂરી આપો.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "અમને પરવાનગીઓની જરૂર છે. માઇક્રોફોન ઍક્સેસ આપવા માટે એક વિન્ડો ખુલશે...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "પરવાનગીઓ આપવામાં આવી. શરૂ કરી રહ્યું છે...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "પરવાનગીઓ આપવામાં આવી નથી.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== ટ્રાન્સક્રાઇબ કરેલો ટેક્સ્ટ ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== સારાંશ ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "બનાવ્યું:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "મુખ્ય મુદ્દાઓ:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "વિગતવાર સારાંશ:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "સારાંશ:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "પ્રદાન કરેલા ટેક્સ્ટમાંથી સારાંશ બનાવી શકાયું નથી.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "માઇક્રોફોન ઍક્સેસની મંજૂરી આપો",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "જ્યારે Chrome પરવાનગી સંવાદ બતાવે ત્યારે \"મંજૂરી આપો\" પર ક્લિક કરો. જો તે દેખાય નહીં, તો નીચેના બટનને દબાવો.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "પરવાનગીની વિનંતી કરો",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "વૉઇસ ટ્રાન્સક્રિપ્શન + AI એક્સ્ટેન્શન ઇન્સ્ટોલ થયું",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "બેકગ્રાઉન્ડ સ્ક્રિપ્ટમાંથી માઇક્રોફોન પરવાનગીઓની વિનંતી કરી રહ્યું છે...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ વૉઇસ ભાષા:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

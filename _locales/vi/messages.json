@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Chuyển Giọng Nói Thành Văn Bản + Tóm Tắt AI",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Chuyển đổi giọng nói của bạn thành văn bản và tạo tóm tắt thông minh bằng AI",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Chuyển Giọng Nói + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Chuyển Giọng Nói + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Giọng nói thành văn bản với tóm tắt",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Ghi Âm Giọng Nói",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Bắt Đầu Ghi",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Dừng Ghi",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Xóa Tất Cả",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Sẵn sàng ghi âm",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Đang ghi...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Đã dừng ghi",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Đang yêu cầu quyền...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Đã cấp quyền thành công",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Đang bắt đầu ghi...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Văn Bản Đã Chuyển",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Đang chuyển đổi theo thời gian thực...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Văn bản đã chuyển đổi sẽ xuất hiện ở đây theo thời gian thực...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ từ",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ ký tự",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 Tóm Tắt AI",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Ngắn",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Trung Bình",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Dài",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Tổng Quát",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Điểm Chính",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Chi Tiết",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Tạo Tóm Tắt",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "Tóm tắt được tạo bởi AI sẽ xuất hiện ở đây...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Xuất",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Lưu dưới dạng TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Sao Chép vào Clipboard",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Chuyển giọng nói theo thời gian thực với tóm tắt thông minh",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Lỗi: Trình duyệt của bạn không hỗ trợ truy cập microphone",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Lỗi: Quyền truy cập microphone bị từ chối. Vui lòng cho phép truy cập microphone.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Lỗi: Không phát hiện giọng nói. Hãy thử nói gần microphone hơn.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Lỗi: Không thể truy cập microphone. Kiểm tra xem nó có đang được ứng dụng khác sử dụng không.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Lỗi: Sự cố mạng. Kiểm tra kết nối internet của bạn.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Ghi âm bị gián đoạn.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Lỗi: Không tìm thấy thiết bị microphone.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Lỗi: Microphone đang được ứng dụng khác sử dụng.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Lỗi: Ngữ cảnh không an toàn (sử dụng HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Lỗi khi bắt đầu ghi",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Trình duyệt của bạn không hỗ trợ nhận dạng giọng nói. Hãy thử Chrome hoặc Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Nhận dạng giọng nói không khả dụng trong trình duyệt của bạn.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Không có văn bản để tóm tắt.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Không có nội dung để lưu.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Không có nội dung để sao chép.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Nội dung đã được sao chép vào clipboard.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Lỗi khi sao chép vào clipboard.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Đã xảy ra lỗi khi tạo tóm tắt.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Vui lòng cho phép truy cập microphone trong cài đặt trình duyệt của bạn.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Chúng tôi cần quyền. Một cửa sổ sẽ mở để cấp quyền truy cập microphone...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Đã cấp quyền. Đang bắt đầu...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Chưa cấp quyền.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== VĂN BẢN ĐÃ CHUYỂN ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== TÓM TẮT ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Được tạo vào:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Điểm Chính:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Tóm Tắt Chi Tiết:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Tóm Tắt:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Không thể tạo tóm tắt từ văn bản được cung cấp.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Cho phép truy cập microphone",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Nhấp \"Cho phép\" khi Chrome hiển thị hộp thoại quyền. Nếu không xuất hiện, hãy nhấn nút bên dưới.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Yêu cầu quyền",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Tiện ích Chuyển Giọng Nói + AI đã được cài đặt",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Đang yêu cầu quyền microphone từ script nền...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Ngôn Ngữ Giọng Nói:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

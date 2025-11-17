@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Transkripsi Swara + Ringkesan AI",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Ngowahi swara sampeyan dadi teks lan nggawe ringkesan pinter nganggo AI",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Transkripsi Swara + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Transkripsi Swara + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Swara dadi teks karo ringkesan",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Rekaman Swara",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Miwiti Rekaman",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Mungkasi Rekaman",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Resiki Kabeh",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Siap ngrekam",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Ngrekam...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Rekaman mandheg",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Njaluk idin...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Idin wis diwenehake",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Miwiti rekaman...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Teks Transkripsi",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Nggawe transkripsi real-time...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Teks transkripsi bakal katon ing kene kanthi real-time...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ tembung",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ karakter",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 Ringkesan AI",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Cekak",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Sedhengan",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Dawa",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Umum",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Poin Penting",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Rinci",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Gawe Ringkesan",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "Ringkesan saka AI bakal katon ing kene...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Ekspor",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Simpen minangka TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Salin menyang Clipboard",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Transkripsi swara real-time karo ringkesan pinter",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Kesalahan: Browser sampeyan ora ndhukung akses mikrofon",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Kesalahan: Idin mikrofon ditolak. Mangga ijini akses mikrofon.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Kesalahan: Ora ana swara kang kadeteksi. Coba ngomong luwih cedhak karo mikrofon.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Kesalahan: Ora bisa ngakses mikrofon. Priksa apa lagi digunakake aplikasi liyane.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Kesalahan: Masalah jaringan. Priksa sambungan internet sampeyan.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Rekaman diganggu.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Kesalahan: Ora nemokake piranti mikrofon.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Kesalahan: Mikrofon lagi digunakake aplikasi liyane.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Kesalahan: Konteks ora aman (gunakake HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Kesalahan miwiti rekaman",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Browser sampeyan ora ndhukung pangenalan swara. Coba Chrome utawa Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Pangenalan swara ora kasedhiya ing browser sampeyan.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Ora ana teks kanggo diringkes.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Ora ana konten kanggo disimpen.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Ora ana konten kanggo disalin.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Konten wis disalin menyang clipboard.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Kesalahan nyalin menyang clipboard.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Ana kesalahan nalika nggawe ringkesan.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Mangga ijini akses mikrofon ing setelan browser sampeyan.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Kita butuh idin. Jendhela bakal mbukak kanggo menehi akses mikrofon...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Idin diwenehake. Miwiti...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Idin ora diwenehake.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== TEKS TRANSKRIPSI ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== RINGKESAN ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Digawe ing:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Poin Penting:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Ringkesan Rinci:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Ringkesan:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Ora bisa nggawe ringkesan saka teks sing diwenehake.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Ijini akses mikrofon",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Klik \"Ijini\" nalika Chrome nuduhake dialog idin. Yen ora muncul, pencet tombol ing ngisor.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Njaluk idin",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Ekstensi Transkripsi Swara + AI wis diinstal",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Njaluk idin mikrofon saka skrip latar mburi...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Basa Swara:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

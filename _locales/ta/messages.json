@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "குரல் படியெடுப்பு + AI சுருக்கம்",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "உங்கள் குரலை உரையாக மாற்றி, அறிவார்ந்த AI சுருக்கங்களை உருவாக்குங்கள்",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "குரல் படியெடுப்பு + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 குரல் படியெடுப்பு + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "சுருக்கத்துடன் குரலில் இருந்து உரை",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ குரல் பதிவு",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "பதிவைத் தொடங்கு",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "பதிவை நிறுத்து",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "அனைத்தையும் அழி",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "பதிவு செய்ய தயார்",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "பதிவு செய்கிறது...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "பதிவு நிறுத்தப்பட்டது",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "அனுமதிகளைக் கோருகிறது...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "அனுமதிகள் வெற்றிகரமாக வழங்கப்பட்டன",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "பதிவைத் தொடங்குகிறது...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 படியெடுக்கப்பட்ட உரை",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "நிகழ்நேரத்தில் படியெடுக்கிறது...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "படியெடுக்கப்பட்ட உரை இங்கே நிகழ்நேரத்தில் தோன்றும்...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ சொற்கள்",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ எழுத்துக்கள்",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI சுருக்கம்",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "குறுகிய",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "நடுத்தர",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "நீண்ட",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "பொது",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "முக்கிய புள்ளிகள்",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "விரிவான",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "சுருக்கத்தை உருவாக்கு",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI-உருவாக்கப்பட்ட சுருக்கம் இங்கே தோன்றும்...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 ஏற்றுமதி",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "TXT ஆக சேமி",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "கிளிப்போர்டுக்கு நகலெடு",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ அறிவார்ந்த சுருக்கத்துடன் நிகழ்நேர குரல் படியெடுப்பு",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "பிழை: உங்கள் உலாவி மைக்ரோஃபோன் அணுகலை ஆதரிக்கவில்லை",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "பிழை: மைக்ரோஃபோன் அனுமதிகள் மறுக்கப்பட்டன. மைக்ரோஃபோன் அணுகலை அனுமதிக்கவும்.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "பிழை: பேச்சு கண்டறியப்படவில்லை. மைக்ரோஃபோனுக்கு அருகில் பேச முயற்சிக்கவும்.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "பிழை: மைக்ரோஃபோனை அணுக முடியவில்லை. இது வேறொரு செயலி மூலம் பயன்படுத்தப்படுகிறதா என்பதை சரிபார்க்கவும்.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "பிழை: நெட்வொர்க் சிக்கல். உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "பதிவு குறுக்கிடப்பட்டது.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "பிழை: மைக்ரோஃபோன் சாதனம் காணப்படவில்லை.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "பிழை: மைக்ரோஃபோன் வேறொரு செயலி மூலம் பயன்படுத்தப்படுகிறது.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "பிழை: சூழல் பாதுகாப்பானதல்ல (HTTPS ஐப் பயன்படுத்தவும்).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "பதிவைத் தொடங்குவதில் பிழை",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "உங்கள் உலாவி பேச்சு அங்கீகாரத்தை ஆதரிக்கவில்லை. Chrome அல்லது Edge ஐ முயற்சிக்கவும்.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "உங்கள் உலாவியில் பேச்சு அங்கீகாரம் கிடைக்கவில்லை.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "சுருக்க உரை எதுவும் இல்லை.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "சேமிக்க உள்ளடக்கம் இல்லை.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "நகலெடுக்க உள்ளடக்கம் இல்லை.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "உள்ளடக்கம் கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "கிளிப்போர்டுக்கு நகலெடுப்பதில் பிழை.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "சுருக்கத்தை உருவாக்கும்போது பிழை ஏற்பட்டது.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "உங்கள் உலாவி அமைப்புகளில் மைக்ரோஃபோன் அணுகலை அனுமதிக்கவும்.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "எங்களுக்கு அனுமதிகள் தேவை. மைக்ரோஃபோன் அணுகலை வழங்க ஒரு சாளரம் திறக்கும்...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "அனுமதிகள் வழங்கப்பட்டன. தொடங்குகிறது...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "அனுமதிகள் வழங்கப்படவில்லை.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== படியெடுக்கப்பட்ட உரை ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== சுருக்கம் ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "உருவாக்கப்பட்டது:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "முக்கிய புள்ளிகள்:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "விரிவான சுருக்கம்:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "சுருக்கம்:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "வழங்கப்பட்ட உரையிலிருந்து சுருக்கத்தை உருவாக்க முடியவில்லை.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "மைக்ரோஃபோன் அணுகலை அனுமதி",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Chrome அனுமதி உரையாடலைக் காட்டும்போது \"அனுமதி\" என்பதைக் கிளிக் செய்யவும். அது தோன்றவில்லை என்றால், கீழே உள்ள பொத்தானை அழுத்தவும்.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "அனுமதியைக் கோரவும்",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "குரல் படியெடுப்பு + AI நீட்டிப்பு நிறுவப்பட்டது",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "பின்னணி ஸ்கிரிப்ட்டிலிருந்து மைக்ரோஃபோன் அனுமதிகளைக் கோருகிறது...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ குரல் மொழி:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

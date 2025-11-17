@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "نسخ الصوت + ملخص الذكاء الاصطناعي",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "حول صوتك إلى نص وأنشئ ملخصات ذكية بالذكاء الاصطناعي",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "نسخ الصوت + الذكاء الاصطناعي",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 نسخ الصوت + الذكاء الاصطناعي",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "الصوت إلى نص مع الملخص",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ تسجيل الصوت",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "بدء التسجيل",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "إيقاف التسجيل",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "مسح الكل",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "جاهز للتسجيل",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "جارٍ التسجيل...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "توقف التسجيل",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "طلب الأذونات...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "تم منح الأذونات بنجاح",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "بدء التسجيل...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 النص المنسوخ",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "النسخ في الوقت الفعلي...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "سيظهر النص المنسوخ هنا في الوقت الفعلي...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ كلمة",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ حرف",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 ملخص الذكاء الاصطناعي",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "قصير",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "متوسط",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "طويل",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "عام",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "النقاط الرئيسية",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "مفصل",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "إنشاء الملخص",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "سيظهر الملخص الذي أنشأه الذكاء الاصطناعي هنا...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 تصدير",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "حفظ كملف TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "نسخ إلى الحافظة",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ نسخ الصوت في الوقت الفعلي مع ملخص ذكي",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "خطأ: متصفحك لا يدعم الوصول إلى الميكروفون",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "خطأ: تم رفض أذونات الميكروفون. يرجى السماح بالوصول إلى الميكروفون.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "خطأ: لم يتم اكتشاف صوت. حاول التحدث بالقرب من الميكروفون.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "خطأ: لا يمكن الوصول إلى الميكروفون. تحقق من أنه غير مستخدم من تطبيق آخر.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "خطأ: مشكلة في الشبكة. تحقق من اتصالك بالإنترنت.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "تم إيقاف التسجيل.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "خطأ: لم يتم العثور على جهاز ميكروفون.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "خطأ: الميكروفون قيد الاستخدام من تطبيق آخر.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "خطأ: السياق غير آمن (استخدم HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "خطأ في بدء التسجيل",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "متصفحك لا يدعم التعرف على الصوت. جرب Chrome أو Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "التعرف على الصوت غير متوفر في متصفحك.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "لا يوجد نص لتلخيصه.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "لا يوجد محتوى للحفظ.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "لا يوجد محتوى للنسخ.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "تم نسخ المحتوى إلى الحافظة.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "خطأ في النسخ إلى الحافظة.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "حدث خطأ أثناء إنشاء الملخص.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "يرجى السماح بالوصول إلى الميكروفون في إعدادات المتصفح.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "نحتاج إلى أذونات. ستفتح نافذة لمنح الوصول إلى الميكروفون...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "تم منح الأذونات. جارٍ البدء...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "لم يتم منح الأذونات.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== النص المنسوخ ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== الملخص ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "تم الإنشاء في:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "النقاط الرئيسية:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "ملخص مفصل:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "ملخص:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "تعذر إنشاء ملخص من النص المقدم.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "السماح بالوصول إلى الميكروفون",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "انقر فوق \"السماح\" عندما يعرض Chrome مربع حوار الأذونات. إذا لم يظهر، اضغط على الزر أدناه.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "طلب الإذن",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "تم تثبيت إضافة نسخ الصوت + الذكاء الاصطناعي",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "طلب أذونات الميكروفون من سكريبت الخلفية...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ لغة الصوت:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ قيمنا والدعم",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "قيمنا:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "تحتاج مساعدة؟",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "نسخ بريد الدعم",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "مشاركة",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "تم نسخ بريد الدعم إلى الحافظة!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "شكراً لك على تقييمك!",
+    "description": "Thank you for rating message"
+  }
+}

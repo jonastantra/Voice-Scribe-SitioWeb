@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Voice Transcription + AI Summary",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Convert your voice to text and generate intelligent AI summaries",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Voice Transcription + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Voice Transcription + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Voice to text with summary",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Voice Recording",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Start Recording",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Stop Recording",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Clear All",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Ready to record",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Recording...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Recording stopped",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Requesting permissions...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Permissions granted successfully",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Starting recording...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Transcribed Text",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Transcribing in real-time...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Transcribed text will appear here in real-time...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ words",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ characters",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI Summary",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Short",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Medium",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Long",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "General",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Key Points",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Detailed",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Generate Summary",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI-generated summary will appear here...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Export",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Save as TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Copy to Clipboard",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Real-time voice transcription with intelligent summary",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Error: Your browser doesn't support microphone access",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Error: Microphone permissions denied. Please allow microphone access.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Error: No speech detected. Try speaking closer to the microphone.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Error: Cannot access microphone. Check if it's being used by another application.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Error: Network problem. Check your internet connection.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Recording interrupted.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Error: No microphone device found.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Error: Microphone is being used by another application.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Error: Context is not secure (use HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Error starting recording",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Your browser doesn't support speech recognition. Try Chrome or Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Speech recognition is not available in your browser.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "No text to summarize.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "No content to save.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "No content to copy.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Content copied to clipboard.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Error copying to clipboard.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "An error occurred while generating the summary.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Please allow microphone access in your browser settings.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "We need permissions. A window will open to grant microphone access...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Permissions granted. Starting...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Permissions not granted.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== TRANSCRIBED TEXT ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== SUMMARY ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Generated on:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Key Points:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Detailed Summary:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Summary:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Could not generate a summary from the provided text.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Allow microphone access",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Click \"Allow\" when Chrome shows the permissions dialog. If it doesn't appear, press the button below.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Request permission",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Voice Transcription + AI Extension installed",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Requesting microphone permissions from background script...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Voice Language:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

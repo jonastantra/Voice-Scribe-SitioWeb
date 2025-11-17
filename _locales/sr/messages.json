@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Транскрипција Гласа + АИ Резиме",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Претворите свој глас у текст и створите паметна АИ резимеа",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Транскрипција Гласа + АИ",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Транскрипција Гласа + АИ",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Глас у текст са резимеом",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Снимање Гласа",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Започни Снимање",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Заустави Снимање",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Обриши Све",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Спремно за снимање",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Снимање...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Снимање заустављено",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Захтевање дозвола...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Дозволе успешно додељене",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Покретање снимања...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Транскрибован Текст",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Транскрибовање у реалном времену...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Транскрибован текст ће се појавити овде у реалном времену...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ речи",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ знакова",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 АИ Резиме",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Кратко",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Средње",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Дугачко",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Опште",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Кључне Тачке",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Детаљно",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Генериши Резиме",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "АИ-генерисано резиме ће се појавити овде...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Извоз",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Сачувај као TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Копирај у Клипборд",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Транскрипција гласа у реалном времену са паметним резимеом",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Грешка: Ваш прегледач не подржава приступ микрофону",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Грешка: Дозволе за микрофон су одбијене. Молимо дозволите приступ микрофону.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Грешка: Говор није откривен. Покушајте да говорите ближе микрофону.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Грешка: Није могуће приступити микрофону. Проверите да ли га користи друга апликација.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Грешка: Проблем са мрежом. Проверите вашу интернет везу.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Снимање прекинуто.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Грешка: Микрофон није пронађен.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Грешка: Микрофон користи друга апликација.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Грешка: Контекст није сигуран (користите HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Грешка при покретању снимања",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Ваш прегледач не подржава препознавање говора. Покушајте Chrome или Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Препознавање говора није доступно у вашем прегледачу.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Нема текста за резимирање.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Нема садржаја за чување.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Нема садржаја за копирање.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Садржај копиран у клипборд.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Грешка при копирању у клипборд.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Дошло је до грешке при генерисању резимеа.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Молимо дозволите приступ микрофону у подешавањима прегледача.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Потребне су нам дозволе. Отвориће се прозор за одобравање приступа микрофону...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Дозволе додељене. Покретање...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Дозволе нису додељене.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== ТРАНСКРИБОВАН ТЕКСТ ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== РЕЗИМЕ ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Генерисано:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Кључне Тачке:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Детаљно Резиме:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Резиме:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Није могуће генерисати резиме из датог текста.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Дозволи приступ микрофону",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Кликните на \"Дозволи\" када Chrome прикаже дијалог дозвола. Ако се не појави, притисните дугме испод.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Затражи дозволу",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Додатак Транскрипција Гласа + АИ је инсталиран",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Захтевање дозвола за микрофон из позадинског скрипта...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Језик Гласа:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

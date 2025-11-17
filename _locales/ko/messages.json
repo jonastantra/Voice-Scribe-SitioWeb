@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "음성 전사 + AI 요약",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "음성을 텍스트로 변환하고 지능적인 AI 요약을 생성하세요",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "음성 전사 + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 음성 전사 + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "요약이 포함된 음성을 텍스트로",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ 음성 녹음",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "녹음 시작",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "녹음 중지",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "모두 지우기",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "녹음 준비 완료",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "녹음 중...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "녹음 중지됨",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "권한 요청 중...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "권한이 성공적으로 부여되었습니다",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "녹음 시작 중...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 전사된 텍스트",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "실시간으로 전사 중...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "전사된 텍스트가 여기에 실시간으로 나타납니다...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ 단어",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ 문자",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI 요약",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "짧게",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "보통",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "길게",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "일반",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "핵심 요점",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "상세",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "요약 생성",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI가 생성한 요약이 여기에 나타납니다...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 내보내기",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "TXT로 저장",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "클립보드에 복사",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ 지능형 요약이 포함된 실시간 음성 전사",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "오류: 브라우저가 마이크 액세스를 지원하지 않습니다",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "오류: 마이크 권한이 거부되었습니다. 마이크 액세스를 허용해주세요.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "오류: 음성이 감지되지 않았습니다. 마이크에 더 가까이 말해보세요.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "오류: 마이크에 액세스할 수 없습니다. 다른 애플리케이션에서 사용 중인지 확인하세요.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "오류: 네트워크 문제입니다. 인터넷 연결을 확인하세요.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "녹음이 중단되었습니다.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "오류: 마이크 장치를 찾을 수 없습니다.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "오류: 마이크가 다른 애플리케이션에서 사용 중입니다.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "오류: 컨텍스트가 안전하지 않습니다(HTTPS 사용).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "녹음 시작 오류",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "브라우저가 음성 인식을 지원하지 않습니다. Chrome 또는 Edge를 사용해보세요.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "브라우저에서 음성 인식을 사용할 수 없습니다.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "요약할 텍스트가 없습니다.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "저장할 콘텐츠가 없습니다.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "복사할 콘텐츠가 없습니다.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "클립보드에 콘텐츠가 복사되었습니다.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "클립보드 복사 오류.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "요약 생성 중 오류가 발생했습니다.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "브라우저 설정에서 마이크 액세스를 허용해주세요.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "권한이 필요합니다. 마이크 액세스 권한을 부여하기 위해 창이 열립니다...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "권한이 부여되었습니다. 시작 중...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "권한이 부여되지 않았습니다.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== 전사된 텍스트 ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== 요약 ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "생성일:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "핵심 요점:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "상세 요약:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "요약:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "제공된 텍스트에서 요약을 생성할 수 없습니다.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "마이크 액세스 허용",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Chrome이 권한 대화상자를 표시하면 \"허용\"을 클릭하세요. 나타나지 않으면 아래 버튼을 누르세요.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "권한 요청",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "음성 전사 + AI 확장 프로그램 설치됨",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "백그라운드 스크립트에서 마이크 권한 요청 중...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ 음성 언어:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ 평가하기 & 지원",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "평가하기:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "도움이 필요하신가요?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "지원 이메일 복사",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "공유",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "지원 이메일이 클립보드에 복사되었습니다!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "평가해 주셔서 감사합니다!",
+    "description": "Thank you for rating message"
+  }
+}

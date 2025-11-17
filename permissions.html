@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conceder permiso de micrófono</title>
+    <title data-i18n="permissionsTitle"></title>
     <style>
       body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 16px; }
       h1 { font-size: 18px; margin-bottom: 8px; }
@@ -14,9 +14,9 @@
     </style>
   </head>
   <body>
-    <h1>Permitir acceso al micrófono</h1>
-    <p>Haz clic en "Permitir" cuando Chrome muestre el diálogo de permisos. Si no aparece, presiona el botón de abajo.</p>
-    <button id="askBtn">Solicitar permiso</button>
+    <h1 data-i18n="permissionsTitle"></h1>
+    <p data-i18n="permissionsDescription"></p>
+    <button id="askBtn" data-i18n="permissionsButton"></button>
     <div class="status" id="status"></div>
     <script src="permissions.js"></script>
   </body>

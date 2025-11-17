@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "အသံမှ စာသားအဖြစ် + AI အကျဉ်းချုပ်",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "သင့်အသံကို စာသားအဖြစ် ပြောင်းလဲပြီး AI အကျဉ်းချုပ်များ ဖန်တီးပါ",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "အသံမှ စာသားအဖြစ် + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 အသံမှ စာသားအဖြစ် + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "အကျဉ်းချုပ်ဖြင့် အသံမှ စာသားသို့",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ အသံဖမ်းယူခြင်း",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "မှတ်တမ်းတင်ရန် စတင်ပါ",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "မှတ်တမ်းတင်ခြင်း ရပ်တန့်ပါ",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "အားလုံးရှင်းလင်းပါ",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "မှတ်တမ်းတင်ရန် အဆင်သင့်ဖြစ်သည်",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "မှတ်တမ်းတင်နေသည်...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "မှတ်တမ်းတင်ခြင်း ရပ်တန့်သွားပြီ",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "ခွင့်ပြုချက်များ တောင်းနေသည်...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "ခွင့်ပြုချက်များ အောင်မြင်စွာ ပေးအပ်ပြီးပါပြီ",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "မှတ်တမ်းတင်ခြင်း စတင်နေသည်...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 ပြောင်းလဲထားသော စာသား",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "အချိန်နှင့်တစ်ပြေးညီ ပြောင်းလဲနေသည်...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "ပြောင်းလဲထားသော စာသားများ ဒီမှာ အချိန်နှင့်တစ်ပြေးညီ ပေါ်လာပါမည်...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "စကားလုံး $COUNT$ လုံး",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "အက္ခရာ $COUNT$ လုံး",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI အကျဉ်းချုပ်",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "တိုတိုလေး",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "အလယ်အလတ်",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "ရှည်လျားတယ်",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "ယေဘုယျ",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "အဓိက အချက်များ",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "အသေးစိတ်",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "အကျဉ်းချုပ် ဖန်တီးပါ",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI က ဖန်တီးထားတဲ့ အကျဉ်းချုပ် ဒီမှာ ပေါ်လာပါမည်...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 ပို့ကုန်",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "TXT အဖြစ် သိမ်းဆည်းပါ",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "ကလစ်ဘုတ်သို့ ကူးယူပါ",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ အသိပညာရှိသော အကျဉ်းချုပ်ဖြင့် အချိန်နှင့်တစ်ပြေးညီ အသံပြောင်းလဲခြင်း",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "အမှား: သင့်ဘရောက်ဇာက မိုက်ခရိုဖုန်း အသုံးပြုခွင့်ကို ပံ့ပိုးမပေးပါ",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "အမှား: မိုက်ခရိုဖုန်း ခွင့်ပြုချက်များ ငြင်းပယ်ခံရပါတယ်။ ကျေးဇူးပြု၍ မိုက်ခရိုဖုန်း အသုံးပြုခွင့် ပေးပါ။",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "အမှား: အသံ မတွေ့ရှိပါ။ မိုက်ခရိုဖုန်းနှင့် ပိုနီးစွာ ပြောကြည့်ပါ။",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "အမှား: မိုက်ခရိုဖုန်းကို အသုံးပြု၍မရပါ။ အခြား အက်ပ်ကနေ အသုံးပြုနေခြင်း ရှိမရှိ စစ်ဆေးပါ။",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "အမှား: ကွန်ရက် ပြဿနာ။ သင့်အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ။",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "မှတ်တမ်းတင်ခြင်း အနှောင့်အယှက်ဖြစ်သွားပါသည်။",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "အမှား: မိုက်ခရိုဖုန်း ကိရိယာ မတွေ့ရှိပါ။",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "အမှား: မိုက်ခရိုဖုန်းကို အခြား အက်ပ်က အသုံးပြုနေပါသည်။",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "အမှား: ဆက်စပ်မှု လုံခြုံမှု မရှိပါ (HTTPS သုံးပါ)။",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "မှတ်တမ်းတင်ခြင်း စတင်ရာတွင် အမှားအယွင်း",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "သင့်ဘရောက်ဇာက အသံ ခွဲခြားသိမြင်မှုကို ပံ့ပိုးမပေးပါ။ Chrome သို့မဟုတ် Edge ကို စမ်းကြည့်ပါ။",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "သင့်ဘရောက်ဇာတွင် အသံ ခွဲခြားသိမြင်မှု မရရှိနိုင်ပါ။",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "အကျဉ်းချုပ်ရန် စာသား မရှိပါ။",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "သိမ်းဆည်းရန် အကြောင်းအရာ မရှိပါ။",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "ကူးယူရန် အကြောင်းအရာ မရှိပါ။",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "အကြောင်းအရာကို ကလစ်ဘုတ်သို့ ကူးယူပြီးပါပြီ။",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "ကလစ်ဘုတ်သို့ ကူးယူရာတွင် အမှားအယွင်း။",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "အကျဉ်းချုပ် ဖန်တီးရာတွင် အမှားအယွင်း ဖြစ်ပေါ်ခဲ့ပါသည်။",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "ကျေးဇူးပြု၍ သင့်ဘရောက်ဇာ ဆက်တင်များတွင် မိုက်ခရိုဖုန်း အသုံးပြုခွင့် ပေးပါ။",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "ကျွန်ုပ်တို့ ခွင့်ပြုချက်များ လိုအပ်ပါသည်။ မိုက်ခရိုဖုန်း အသုံးပြုခွင့် ပေးရန် ဝင်းဒိုး တစ်ခု ပွင့်လာပါမည်...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "ခွင့်ပြုချက်များ ပေးအပ်ပြီးပါပြီ။ စတင်နေသည်...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "ခွင့်ပြုချက်များ မပေးအပ်ရသေးပါ။",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== ပြောင်းလဲထားသော စာသား ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== အကျဉ်းချုပ် ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "ဖန်တီးသည့်နေ့:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "အဓိက အချက်များ:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "အသေးစိတ် အကျဉ်းချုပ်:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "အကျဉ်းချုပ်:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "ပေးထားသော စာသားမှ အကျဉ်းချုပ် မဖန်တီးနိုင်ပါ။",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "မိုက်ခရိုဖုန်း အသုံးပြုခွင့် ပေးပါ",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Chrome က ခွင့်ပြုချက် ဒိုင်ယာလော့ ပြသည့်အခါ \"ခွင့်ပြုပါ\" ကို နှိပ်ပါ။ မပေါ်လာပါက အောက်ပါ ခလုတ်ကို နှိပ်ပါ။",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "ခွင့်ပြုချက် တောင်းပါ",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "အသံမှ စာသားအဖြစ် + AI တိုးချဲ့ချက် တပ်ဆင်ပြီးပါပြီ",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "နောက်ခံ စကရစ်မှ မိုက်ခရိုဖုန်း ခွင့်ပြုချက်များ တောင်းနေသည်...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ အသံ ဘာသာစကား:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

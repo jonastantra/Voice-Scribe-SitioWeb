@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Ses Transkripsiyon + AI Özeti",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Sesinizi metne dönüştürün ve akıllı AI özetleri oluşturun",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Ses Transkripsiyon + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Ses Transkripsiyon + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Özet ile sesten metne",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Ses Kaydı",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Kaydı Başlat",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Kaydı Durdur",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Tümünü Temizle",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Kayıt için hazır",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Kayıt yapılıyor...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Kayıt durduruldu",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "İzinler isteniyor...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "İzinler başarıyla verildi",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Kayıt başlatılıyor...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Transkript Edilmiş Metin",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Gerçek zamanlı transkripsiyon yapılıyor...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Transkript edilmiş metin burada gerçek zamanlı olarak görünecek...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ kelime",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ karakter",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI Özeti",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Kısa",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Orta",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Uzun",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Genel",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Anahtar Noktalar",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Detaylı",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Özet Oluştur",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI tarafından oluşturulan özet burada görünecek...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Dışa Aktar",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "TXT olarak Kaydet",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Panoya Kopyala",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Akıllı özet ile gerçek zamanlı ses transkripsiyon",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Hata: Tarayıcınız mikrofon erişimini desteklemiyor",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Hata: Mikrofon izinleri reddedildi. Lütfen mikrofon erişimine izin verin.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Hata: Konuşma algılanmadı. Mikrofona daha yakın konuşmayı deneyin.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Hata: Mikrofona erişilemiyor. Başka bir uygulama tarafından kullanılıp kullanılmadığını kontrol edin.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Hata: Ağ sorunu. İnternet bağlantınızı kontrol edin.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Kayıt kesintiye uğradı.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Hata: Mikrofon cihazı bulunamadı.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Hata: Mikrofon başka bir uygulama tarafından kullanılıyor.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Hata: Bağlam güvenli değil (HTTPS kullanın).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Kaydı başlatma hatası",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Tarayıcınız konuşma tanımayı desteklemiyor. Chrome veya Edge'i deneyin.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Konuşma tanıma tarayıcınızda kullanılamıyor.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Özetlenecek metin yok.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Kaydedilecek içerik yok.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Kopyalanacak içerik yok.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "İçerik panoya kopyalandı.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Panoya kopyalama hatası.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Özet oluşturulurken bir hata oluştu.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Lütfen tarayıcı ayarlarınızdan mikrofon erişimine izin verin.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "İzinlere ihtiyacımız var. Mikrofon erişimi vermek için bir pencere açılacak...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "İzinler verildi. Başlatılıyor...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "İzinler verilmedi.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== TRANSKRİPT EDİLMİŞ METİN ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== ÖZET ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Oluşturulma tarihi:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Anahtar Noktalar:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Detaylı Özet:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Özet:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Sağlanan metinden özet oluşturulamadı.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Mikrofon erişimine izin ver",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Chrome izin iletişim kutusunu gösterdiğinde \"İzin Ver\"e tıklayın. Görünmüyorsa aşağıdaki düğmeye basın.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "İzin iste",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Ses Transkripsiyon + AI Uzantısı yüklendi",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Arka plan betiğinden mikrofon izinleri isteniyor...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Ses Dili:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

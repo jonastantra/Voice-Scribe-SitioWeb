@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Pagsusulat ng Tinig + Buod ng AI",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "I-convert ang iyong boses sa teksto at lumikha ng matalinong mga buod ng AI",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Pagsusulat ng Tinig + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Pagsusulat ng Tinig + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Boses patungo sa teksto na may buod",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Pag-record ng Tinig",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Simulan ang Pag-record",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Itigil ang Pag-record",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Burahin Lahat",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Handa nang mag-record",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Nag-rerecord...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Itinigil ang pag-record",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Humihiling ng mga pahintulot...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Matagumpay na nabigyan ng mga pahintulot",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Nagsisimula ng pag-record...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Naisulat na Teksto",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Nagsusulat sa real-time...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Ang naisulat na teksto ay lilitaw dito sa real-time...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ mga salita",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ mga character",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 Buod ng AI",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Maikli",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Katamtaman",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Mahaba",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Pangkalahatan",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Pangunahing Puntos",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Detalyado",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Lumikha ng Buod",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "Ang buod na nilikha ng AI ay lilitaw dito...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 I-export",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "I-save bilang TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Kopyahin sa Clipboard",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Real-time na pagsusulat ng tinig na may matalinong buod",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Error: Ang iyong browser ay hindi sumusuporta sa pag-access sa mikropono",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Error: Tinanggihan ang mga pahintulot ng mikropono. Mangyaring payagan ang pag-access sa mikropono.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Error: Walang natukoy na pagsasalita. Subukang magsalita nang mas malapit sa mikropono.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Error: Hindi ma-access ang mikropono. Suriin kung ginagamit ba ito ng ibang application.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Error: Problema sa network. Suriin ang iyong koneksyon sa internet.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Naantala ang pag-record.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Error: Walang nahanap na device ng mikropono.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Error: Ang mikropono ay ginagamit ng ibang application.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Error: Ang konteksto ay hindi secure (gumamit ng HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Error sa pagsisimula ng pag-record",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Ang iyong browser ay hindi sumusuporta sa pagkilala ng pagsasalita. Subukan ang Chrome o Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Ang pagkilala ng pagsasalita ay hindi available sa iyong browser.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Walang teksto upang buodin.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Walang nilalaman upang i-save.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Walang nilalaman upang kopyahin.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Nakopya ang nilalaman sa clipboard.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Error sa pagkopya sa clipboard.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "May naganap na error habang lumilikha ng buod.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Mangyaring payagan ang pag-access sa mikropono sa mga setting ng iyong browser.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Kailangan natin ng mga pahintulot. Magbubukas ng window upang bigyan ng access sa mikropono...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Nabigyan ng mga pahintulot. Nagsisimula...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Hindi nabigyan ng mga pahintulot.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== NAISULAT NA TEKSTO ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== BUOD ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Nilikha noong:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Pangunahing Puntos:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Detalyadong Buod:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Buod:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Hindi makalikha ng buod mula sa ibinigay na teksto.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Payagan ang pag-access sa mikropono",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "I-click ang \"Payagan\" kapag nagpakita ang Chrome ng dialog ng pahintulot. Kung hindi ito lumitaw, pindutin ang button sa ibaba.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Hilingin ang pahintulot",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Naka-install na ang Pagsusulat ng Tinig + AI Extension",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Humihiling ng mga pahintulot ng mikropono mula sa background script...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Wika ng Tinig:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "ভয়েস ট্রান্সক্রিপশন + AI সারসংক্ষেপ",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "আপনার ভয়েসকে টেক্সটে রূপান্তর করুন এবং বুদ্ধিমান AI সারসংক্ষেপ তৈরি করুন",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "ভয়েস ট্রান্সক্রিপশন + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 ভয়েস ট্রান্সক্রিপশন + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "সারসংক্ষেপ সহ ভয়েস থেকে টেক্সট",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ ভয়েস রেকর্ডিং",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "রেকর্ডিং শুরু করুন",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "রেকর্ডিং বন্ধ করুন",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "সব মুছুন",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "রেকর্ড করার জন্য প্রস্তুত",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "রেকর্ড করা হচ্ছে...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "রেকর্ডিং বন্ধ হয়েছে",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "অনুমতি অনুরোধ করা হচ্ছে...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "অনুমতি সফলভাবে প্রদান করা হয়েছে",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "রেকর্ডিং শুরু হচ্ছে...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 ট্রান্সক্রাইব করা টেক্সট",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "রিয়েল-টাইমে ট্রান্সক্রাইব করা হচ্ছে...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "ট্রান্সক্রাইব করা টেক্সট এখানে রিয়েল-টাইমে প্রদর্শিত হবে...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ শব্দ",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ অক্ষর",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI সারসংক্ষেপ",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "সংক্ষিপ্ত",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "মাঝারি",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "দীর্ঘ",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "সাধারণ",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "মূল পয়েন্ট",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "বিস্তারিত",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "সারসংক্ষেপ তৈরি করুন",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI-তৈরি সারসংক্ষেপ এখানে প্রদর্শিত হবে...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 এক্সপোর্ট",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "TXT হিসাবে সংরক্ষণ করুন",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "ক্লিপবোর্ডে কপি করুন",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ বুদ্ধিমান সারসংক্ষেপ সহ রিয়েল-টাইম ভয়েস ট্রান্সক্রিপশন",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "ত্রুটি: আপনার ব্রাউজার মাইক্রোফোন অ্যাক্সেস সমর্থন করে না",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "ত্রুটি: মাইক্রোফোন অনুমতি অস্বীকার করা হয়েছে। অনুগ্রহ করে মাইক্রোফোন অ্যাক্সেসের অনুমতি দিন।",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "ত্রুটি: কোনো বক্তৃতা সনাক্ত করা যায়নি। মাইক্রোফোনের কাছে কথা বলার চেষ্টা করুন।",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "ত্রুটি: মাইক্রোফোন অ্যাক্সেস করা যাচ্ছে না। এটি অন্য অ্যাপ্লিকেশন দ্বারা ব্যবহৃত হচ্ছে কিনা তা পরীক্ষা করুন।",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "ত্রুটি: নেটওয়ার্ক সমস্যা। আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন।",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "রেকর্ডিং বাধাগ্রস্ত হয়েছে।",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "ত্রুটি: কোনো মাইক্রোফোন ডিভাইস পাওয়া যায়নি।",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "ত্রুটি: মাইক্রোফোন অন্য অ্যাপ্লিকেশন দ্বারা ব্যবহৃত হচ্ছে।",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "ত্রুটি: প্রসঙ্গ সুরক্ষিত নয় (HTTPS ব্যবহার করুন)।",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "রেকর্ডিং শুরু করতে ত্রুটি",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "আপনার ব্রাউজার বক্তৃতা স্বীকৃতি সমর্থন করে না। Chrome বা Edge চেষ্টা করুন।",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "আপনার ব্রাউজারে বক্তৃতা স্বীকৃতি উপলব্ধ নেই।",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "সারসংক্ষেপ করার জন্য কোনো টেক্সট নেই।",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "সংরক্ষণ করার জন্য কোনো কন্টেন্ট নেই।",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "কপি করার জন্য কোনো কন্টেন্ট নেই।",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "কন্টেন্ট ক্লিপবোর্ডে কপি করা হয়েছে।",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "ক্লিপবোর্ডে কপি করতে ত্রুটি।",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "সারসংক্ষেপ তৈরি করার সময় একটি ত্রুটি ঘটেছে।",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "অনুগ্রহ করে আপনার ব্রাউজার সেটিংসে মাইক্রোফোন অ্যাক্সেসের অনুমতি দিন।",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "আমাদের অনুমতি প্রয়োজন। মাইক্রোফোন অ্যাক্সেস দেওয়ার জন্য একটি উইন্ডো খুলবে...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "অনুমতি প্রদান করা হয়েছে। শুরু হচ্ছে...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "অনুমতি প্রদান করা হয়নি।",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== ট্রান্সক্রাইব করা টেক্সট ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== সারসংক্ষেপ ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "তৈরি করা হয়েছে:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "মূল পয়েন্ট:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "বিস্তারিত সারসংক্ষেপ:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "সারসংক্ষেপ:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "প্রদত্ত টেক্সট থেকে একটি সারসংক্ষেপ তৈরি করা যায়নি।",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "মাইক্রোফোন অ্যাক্সেসের অনুমতি দিন",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Chrome অনুমতি ডায়ালগ দেখালে \"অনুমতি দিন\" এ ক্লিক করুন। যদি এটি প্রদর্শিত না হয়, নীচের বোতাম টিপুন।",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "অনুমতির অনুরোধ করুন",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "ভয়েস ট্রান্সক্রিপশন + AI এক্সটেনশন ইনস্টল করা হয়েছে",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "ব্যাকগ্রাউন্ড স্ক্রিপ্ট থেকে মাইক্রোফোন অনুমতি অনুরোধ করা হচ্ছে...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ ভয়েস ভাষা:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

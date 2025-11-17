@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Rubuce-rubucen Murya + Taƙaitaccen AI",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Canza muryarka zuwa rubutu kuma ƙirƙiro taƙaitaccen bayanai mai hankali ta AI",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Rubuce-rubucen Murya + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Rubuce-rubucen Murya + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Murya zuwa rubutu tare da taƙaitawa",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Rikodin Murya",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Fara Rikodi",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Tsayar da Rikodi",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Share Duka",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Shirye don rikodi",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Ana yin rikodi...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "An tsayar da rikodi",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Ana neman izini...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "An ba da izini da nasara",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Ana fara rikodi...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Rubutun da aka rubuta",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Ana rubuta a lokacin aiki...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Rubutun da aka rubuta zai bayyana anan a lokacin aiki...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "kalmomi $COUNT$",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "haruffa $COUNT$",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 Taƙaitaccen AI",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Gajere",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Matsakaici",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Dogon",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Gabaɗaya",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Mahimman Batutuwa",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Dalla-dalla",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Ƙirƙiri Taƙaitawa",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "Taƙaitaccen da AI ya ƙirƙira zai bayyana anan...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Fitar",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Ajiye kamar TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Kwafi zuwa Allo",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Rubuce-rubucen murya na lokacin aiki tare da taƙaitaccen mai hankali",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Kuskure: Mai binciken ku ba ya goyan bayan samun damar makirufo",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Kuskure: An ƙi izinin makirufo. Da fatan za a ba da izinin samun damar makirufo.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Kuskure: Ba a gano magana ba. Gwada magana kusa da makirufo.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Kuskure: Ba za a iya samun damar makirufo ba. Duba ko wani aikace-aikace yana amfani da shi.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Kuskure: Matsalar cibiyar sadarwa. Duba haɗin intanet ɗinku.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "An katse rikodi.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Kuskure: Ba a sami na'urar makirufo ba.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Kuskure: Wani aikace-aikace yana amfani da makirufo.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Kuskure: Mahallin ba shi da tsaro (yi amfani da HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Kuskure wajen fara rikodi",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Mai binciken ku ba ya goyan bayan gane magana. Gwada Chrome ko Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Gane magana ba ya samuwa a cikin mai binciken ku.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Babu rubutu don taƙaitawa.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Babu abun ciki don ajiyewa.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Babu abun ciki don kwafawa.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "An kwafi abun ciki zuwa allo.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Kuskure wajen kwafawa zuwa allo.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Kuskure ya faru wajen ƙirƙirar taƙaitawa.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Da fatan za a ba da izinin samun damar makirufo a cikin saitunan mai binciken ku.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Muna buƙatar izini. Za a buɗe taga don ba da damar makirufo...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "An ba da izini. Ana farawa...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Ba a ba da izini ba.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== RUBUTUN DA AKA RUBUTA ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== TAƘAITAWA ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "An ƙirƙira a:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Mahimman Batutuwa:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Taƙaitawa Dalla-dalla:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Taƙaitawa:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Ba za a iya ƙirƙirar taƙaitawa daga rubutun da aka bayar ba.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Ba da izinin samun damar makirufo",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Danna \"Ba da izini\" lokacin da Chrome ya nuna tattaunawar izini. Idan bai bayyana ba, danna maɓallin ƙasa.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Nemi izini",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "An shigar da ƙarin Rubuce-rubucen Murya + AI",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Ana neman izinin makirufo daga rubutun bango...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Harshen Murya:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

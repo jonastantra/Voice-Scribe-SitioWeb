@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "音声文字起こし + AI要約",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "音声をテキストに変換し、AIでインテリジェントな要約を生成",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "音声文字起こし + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 音声文字起こし + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "音声からテキストへ要約付き",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ 音声録音",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "録音開始",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "録音停止",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "すべてクリア",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "録音準備完了",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "録音中...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "録音停止",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "権限を要求中...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "権限が正常に付与されました",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "録音を開始しています...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 文字起こしテキスト",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "リアルタイム文字起こし中...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "文字起こしテキストがリアルタイムで表示されます...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ 文字",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ 文字",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI要約",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "短い",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "中程度",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "長い",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "一般",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "重要ポイント",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "詳細",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "要約生成",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AIが生成した要約がここに表示されます...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 エクスポート",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "TXTとして保存",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "クリップボードにコピー",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ インテリジェント要約付きリアルタイム音声文字起こし",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "エラー：お使いのブラウザはマイクアクセスをサポートしていません",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "エラー：マイクの権限が拒否されました。マイクへのアクセスを許可してください。",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "エラー：音声が検出されませんでした。マイクに近づいて話してください。",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "エラー：マイクにアクセスできません。他のアプリケーションで使用されていないか確認してください。",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "エラー：ネットワークの問題です。インターネット接続を確認してください。",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "録音が中断されました。",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "エラー：マイクデバイスが見つかりません。",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "エラー：マイクが他のアプリケーションで使用されています。",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "エラー：コンテキストが安全ではありません（HTTPSを使用してください）。",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "録音開始エラー",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "お使いのブラウザは音声認識をサポートしていません。ChromeまたはEdgeをお試しください。",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "お使いのブラウザでは音声認識が利用できません。",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "要約するテキストがありません。",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "保存するコンテンツがありません。",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "コピーするコンテンツがありません。",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "コンテンツをクリップボードにコピーしました。",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "クリップボードへのコピー中にエラーが発生しました。",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "要約の生成中にエラーが発生しました。",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "ブラウザの設定でマイクへのアクセスを許可してください。",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "権限が必要です。マイクアクセスを許可するウィンドウが開きます...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "権限が付与されました。開始しています...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "権限が付与されませんでした。",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== 文字起こしテキスト ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== 要約 ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "生成日時：",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "重要ポイント：",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "詳細要約：",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "要約：",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "提供されたテキストから要約を生成できませんでした。",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "マイクへのアクセスを許可",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Chromeが権限ダイアログを表示したら「許可」をクリックしてください。表示されない場合は、下のボタンを押してください。",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "権限を要求",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "音声文字起こし + AI拡張機能がインストールされました",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "バックグラウンドスクリプトからマイクの権限を要求しています...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ 音声言語:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ 評価 & サポート",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "評価してください：",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "ヘルプが必要ですか？",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "サポートメールをコピー",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "共有",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "サポートメールがクリップボードにコピーされました！",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "評価ありがとうございます！",
+    "description": "Thank you for rating message"
+  }
+}

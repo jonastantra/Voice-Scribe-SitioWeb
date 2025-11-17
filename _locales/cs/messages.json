@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Hlasový Přepis + AI Souhrn",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Převeďte svůj hlas na text a vytvořte inteligentní AI souhrny",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Hlasový Přepis + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Hlasový Přepis + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Hlas na text se shrnutím",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Hlasové Nahrávání",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Spustit Nahrávání",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Zastavit Nahrávání",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Vymazat Vše",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Připraven k nahrávání",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Nahrávání...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Nahrávání zastaveno",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Žádost o oprávnění...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Oprávnění úspěšně uděleno",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Spouštění nahrávání...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Přepsaný Text",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Přepisování v reálném čase...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Přepsaný text se zde zobrazí v reálném čase...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ slov",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ znaků",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI Souhrn",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Krátký",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Střední",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Dlouhý",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Obecný",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Klíčové Body",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Detailní",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Vytvořit Souhrn",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI vygenerovaný souhrn se zde zobrazí...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Export",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Uložit jako TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Kopírovat do Schránky",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Hlasový přepis v reálném čase s inteligentním shrnutím",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Chyba: Váš prohlížeč nepodporuje přístup k mikrofonu",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Chyba: Oprávnění k mikrofonu bylo zamítnuto. Povolte prosím přístup k mikrofonu.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Chyba: Nebyla detekována řeč. Zkuste mluvit blíže k mikrofonu.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Chyba: Nelze přistoupit k mikrofonu. Zkontrolujte, zda není používán jinou aplikací.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Chyba: Problém se sítí. Zkontrolujte své internetové připojení.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Nahrávání přerušeno.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Chyba: Nebylo nalezeno žádné mikrofonní zařízení.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Chyba: Mikrofon je používán jinou aplikací.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Chyba: Kontext není bezpečný (použijte HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Chyba při spuštění nahrávání",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Váš prohlížeč nepodporuje rozpoznávání řeči. Zkuste Chrome nebo Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Rozpoznávání řeči není ve vašem prohlížeči k dispozici.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Není k dispozici žádný text ke shrnutí.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Není k dispozici žádný obsah k uložení.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Není k dispozici žádný obsah ke kopírování.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Obsah zkopírován do schránky.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Chyba při kopírování do schránky.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Při vytváření shrnutí došlo k chybě.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Povolte prosím přístup k mikrofonu v nastavení prohlížeče.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Potřebujeme oprávnění. Otevře se okno pro udělení přístupu k mikrofonu...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Oprávnění uděleno. Spouštění...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Oprávnění nebylo uděleno.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== PŘEPSANÝ TEXT ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== SOUHRN ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Vytvořeno:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Klíčové Body:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Detailní Souhrn:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Souhrn:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Nelze vytvořit shrnutí z poskytnutého textu.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Povolit přístup k mikrofonu",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Klikněte na \"Povolit\" když Chrome zobrazí dialog oprávnění. Pokud se nezobrazí, stiskněte tlačítko níže.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Požádat o oprávnění",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Rozšíření Hlasový Přepis + AI bylo nainstalováno",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Žádost o oprávnění mikrofonu z background skriptu...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Jazyk Hlasu:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

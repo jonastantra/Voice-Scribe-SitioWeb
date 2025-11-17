@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "వాయిస్ ట్రాన్స్‌క్రిప్షన్ + AI సారాంశం",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "మీ వాయిస్‌ను టెక్స్ట్‌గా మార్చండి మరియు తెలివైన AI సారాంశాలను రూపొందించండి",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "వాయిస్ ట్రాన్స్‌క్రిప్షన్ + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 వాయిస్ ట్రాన్స్‌క్రిప్షన్ + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "సారాంశంతో వాయిస్ నుండి టెక్స్ట్",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ వాయిస్ రికార్డింగ్",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "రికార్డింగ్ ప్రారంభించండి",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "రికార్డింగ్ ఆపండి",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "అన్నీ క్లియర్ చేయండి",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "రికార్డ్ చేయడానికి సిద్ధంగా ఉంది",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "రికార్డ్ చేస్తోంది...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "రికార్డింగ్ ఆగిపోయింది",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "అనుమతులను అభ్యర్థిస్తోంది...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "అనుమతులు విజయవంతంగా మంజూరు చేయబడ్డాయి",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "రికార్డింగ్ ప్రారంభమవుతోంది...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 ట్రాన్స్‌క్రైబ్ చేసిన టెక్స్ట్",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "రియల్-టైమ్‌లో ట్రాన్స్‌క్రైబ్ చేస్తోంది...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "ట్రాన్స్‌క్రైబ్ చేసిన టెక్స్ట్ ఇక్కడ రియల్-టైమ్‌లో కనిపిస్తుంది...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ పదాలు",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ అక్షరాలు",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 AI సారాంశం",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "చిన్నది",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "మధ్యస్థం",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "పొడవు",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "సాధారణ",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "ముఖ్య అంశాలు",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "వివరణాత్మక",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "సారాంశం రూపొందించండి",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "AI-రూపొందించిన సారాంశం ఇక్కడ కనిపిస్తుంది...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 ఎగుమతి",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "TXT గా సేవ్ చేయండి",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "క్లిప్‌బోర్డ్‌కు కాపీ చేయండి",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ తెలివైన సారాంశంతో రియల్-టైమ్ వాయిస్ ట్రాన్స్‌క్రిప్షన్",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "లోపం: మీ బ్రౌజర్ మైక్రోఫోన్ యాక్సెస్‌ను సపోర్ట్ చేయదు",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "లోపం: మైక్రోఫోన్ అనుమతులు తిరస్కరించబడ్డాయి. దయచేసి మైక్రోఫోన్ యాక్సెస్‌ను అనుమతించండి.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "లోపం: ప్రసంగం గుర్తించబడలేదు. మైక్రోఫోన్‌కు దగ్గరగా మాట్లాడటానికి ప్రయత్నించండి.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "లోపం: మైక్రోఫోన్‌ను యాక్సెస్ చేయలేరు. ఇది మరొక అప్లికేషన్ ద్వారా ఉపయోగించబడుతుందా అని తనిఖీ చేయండి.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "లోపం: నెట్‌వర్క్ సమస్య. మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "రికార్డింగ్ అంతరాయం కలిగింది.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "లోపం: మైక్రోఫోన్ పరికరం కనుగొనబడలేదు.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "లోపం: మైక్రోఫోన్ మరొక అప్లికేషన్ ద్వారా ఉపయోగించబడుతోంది.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "లోపం: సందర్భం సురక్షితమైనది కాదు (HTTPS ఉపయోగించండి).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "రికార్డింగ్ ప్రారంభించడంలో లోపం",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "మీ బ్రౌజర్ స్పీచ్ రికగ్నిషన్‌ను సపోర్ట్ చేయదు. Chrome లేదా Edge ప్రయత్నించండి.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "మీ బ్రౌజర్‌లో స్పీచ్ రికగ్నిషన్ అందుబాటులో లేదు.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "సారాంశం చేయడానికి టెక్స్ట్ లేదు.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "సేవ్ చేయడానికి కంటెంట్ లేదు.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "కాపీ చేయడానికి కంటెంట్ లేదు.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "కంటెంట్ క్లిప్‌బోర్డ్‌కు కాపీ చేయబడింది.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "క్లిప్‌బోర్డ్‌కు కాపీ చేయడంలో లోపం.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "సారాంశం రూపొందించేటప్పుడు లోపం సంభవించింది.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "దయచేసి మీ బ్రౌజర్ సెట్టింగ్‌లలో మైక్రోఫోన్ యాక్సెస్‌ను అనుమతించండి.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "మాకు అనుమతులు కావాలి. మైక్రోఫోన్ యాక్సెస్ మంజూరు చేయడానికి విండో తెరవబడుతుంది...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "అనుమతులు మంజూరు చేయబడ్డాయి. ప్రారంభమవుతోంది...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "అనుమతులు మంజూరు చేయబడలేదు.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== ట్రాన్స్‌క్రైబ్ చేసిన టెక్స్ట్ ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== సారాంశం ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "రూపొందించబడింది:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "ముఖ్య అంశాలు:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "వివరణాత్మక సారాంశం:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "సారాంశం:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "అందించిన టెక్స్ట్ నుండి సారాంశం రూపొందించలేకపోయింది.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "మైక్రోఫోన్ యాక్సెస్‌ను అనుమతించండి",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Chrome అనుమతుల డైలాగ్‌ను చూపినప్పుడు \"అనుమతించు\" పై క్లిక్ చేయండి. అది కనిపించకపోతే, దిగువ బటన్‌ను నొక్కండి.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "అనుమతి అభ్యర్థించండి",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "వాయిస్ ట్రాన్స్‌క్రిప్షన్ + AI ఎక్స్‌టెన్షన్ ఇన్‌స్టాల్ చేయబడింది",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "బ్యాక్‌గ్రౌండ్ స్క్రిప్ట్ నుండి మైక్రోఫోన్ అనుమతులను అభ్యర్థిస్తోంది...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ వాయిస్ భాష:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

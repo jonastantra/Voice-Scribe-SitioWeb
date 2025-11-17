@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Transkrypcja Głosowa + Podsumowanie AI",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Konwertuj swój głos na tekst i generuj inteligentne podsumowania AI",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Transkrypcja Głosowa + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Transkrypcja Głosowa + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Głos na tekst z podsumowaniem",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Nagrywanie Głosu",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Rozpocznij Nagrywanie",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Zatrzymaj Nagrywanie",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Wyczyść Wszystko",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Gotowy do nagrywania",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Nagrywanie...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Nagrywanie zatrzymane",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Żądanie uprawnień...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Uprawnienia przyznane pomyślnie",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Rozpoczynanie nagrywania...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Transkrybowany Tekst",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Transkrypcja w czasie rzeczywistym...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Transkrybowany tekst pojawi się tutaj w czasie rzeczywistym...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ słów",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ znaków",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 Podsumowanie AI",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Krótkie",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Średnie",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Długie",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Ogólne",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Kluczowe Punkty",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Szczegółowe",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Wygeneruj Podsumowanie",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "Podsumowanie wygenerowane przez AI pojawi się tutaj...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Eksport",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Zapisz jako TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Kopiuj do Schowka",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Transkrypcja głosu w czasie rzeczywistym z inteligentnym podsumowaniem",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Błąd: Twoja przeglądarka nie obsługuje dostępu do mikrofonu",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Błąd: Odmowa uprawnień mikrofonu. Proszę zezwolić na dostęp do mikrofonu.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Błąd: Nie wykryto mowy. Spróbuj mówić bliżej mikrofonu.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Błąd: Nie można uzyskać dostępu do mikrofonu. Sprawdź, czy nie jest używany przez inną aplikację.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Błąd: Problem z siecią. Sprawdź swoje połączenie internetowe.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Nagrywanie przerwane.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Błąd: Nie znaleziono urządzenia mikrofonu.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Błąd: Mikrofon jest używany przez inną aplikację.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Błąd: Kontekst nie jest bezpieczny (użyj HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Błąd rozpoczynania nagrywania",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Twoja przeglądarka nie obsługuje rozpoznawania mowy. Spróbuj Chrome lub Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Rozpoznawanie mowy nie jest dostępne w twojej przeglądarce.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Brak tekstu do podsumowania.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Brak treści do zapisania.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Brak treści do skopiowania.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Treść skopiowana do schowka.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Błąd kopiowania do schowka.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Wystąpił błąd podczas generowania podsumowania.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Proszę zezwolić na dostęp do mikrofonu w ustawieniach przeglądarki.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Potrzebujemy uprawnień. Otworzy się okno do przyznania dostępu do mikrofonu...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Uprawnienia przyznane. Uruchamianie...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Uprawnienia nie przyznane.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== TRANSKRYBOWANY TEKST ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== PODSUMOWANIE ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Wygenerowano:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Kluczowe Punkty:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Szczegółowe Podsumowanie:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Podsumowanie:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Nie można wygenerować podsumowania z dostarczonego tekstu.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Zezwól na dostęp do mikrofonu",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Kliknij \"Zezwól\" gdy Chrome wyświetli okno uprawnień. Jeśli się nie pojawi, naciśnij przycisk poniżej.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Poproś o uprawnienie",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Rozszerzenie Transkrypcja Głosowa + AI zostało zainstalowane",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Żądanie uprawnień mikrofonu ze skryptu w tle...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Język Głosu:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}

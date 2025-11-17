@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Μετεγγραφή Φωνής + Περίληψη AI",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Μετατρέψτε τη φωνή σας σε κείμενο και δημιουργήστε έξυπνες περιλήψεις AI",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Μετεγγραφή Φωνής + AI",
+    "description": "Popup title"
+  },
+  "headerTitle": {
+    "message": "🎤 Μετεγγραφή Φωνής + AI",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Φωνή σε κείμενο με περίληψη",
+    "description": "Header subtitle"
+  },
+  "sectionRecording": {
+    "message": "🎙️ Εγγραφή Φωνής",
+    "description": "Recording section title"
+  },
+  "btnStartRecording": {
+    "message": "Έναρξη Εγγραφής",
+    "description": "Start recording button"
+  },
+  "btnStopRecording": {
+    "message": "Διακοπή Εγγραφής",
+    "description": "Stop recording button"
+  },
+  "btnClearAll": {
+    "message": "Εκκαθάριση Όλων",
+    "description": "Clear all button"
+  },
+  "statusReady": {
+    "message": "Έτοιμο για εγγραφή",
+    "description": "Status: ready"
+  },
+  "statusRecording": {
+    "message": "Εγγραφή...",
+    "description": "Status: recording"
+  },
+  "statusStopped": {
+    "message": "Η εγγραφή σταμάτησε",
+    "description": "Status: stopped"
+  },
+  "statusRequestingPermissions": {
+    "message": "Αίτημα αδειών...",
+    "description": "Status: requesting permissions"
+  },
+  "statusPermissionsGranted": {
+    "message": "Οι άδειες χορηγήθηκαν επιτυχώς",
+    "description": "Status: permissions granted"
+  },
+  "statusStarting": {
+    "message": "Έναρξη εγγραφής...",
+    "description": "Status: starting"
+  },
+  "sectionTranscription": {
+    "message": "📝 Μετεγγραμμένο Κείμενο",
+    "description": "Transcription section title"
+  },
+  "realTimeIndicator": {
+    "message": "Μετεγγραφή σε πραγματικό χρόνο...",
+    "description": "Real-time transcription indicator"
+  },
+  "transcriptionPlaceholder": {
+    "message": "Το μετεγγραμμένο κείμενο θα εμφανιστεί εδώ σε πραγματικό χρόνο...",
+    "description": "Transcription area placeholder"
+  },
+  "wordCount": {
+    "message": "$COUNT$ λέξεις",
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "charCount": {
+    "message": "$COUNT$ χαρακτήρες",
+    "description": "Character counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+  "sectionSummary": {
+    "message": "🤖 Περίληψη AI",
+    "description": "Summary section title"
+  },
+  "summaryLengthShort": {
+    "message": "Σύντομη",
+    "description": "Length option: short"
+  },
+  "summaryLengthMedium": {
+    "message": "Μεσαία",
+    "description": "Length option: medium"
+  },
+  "summaryLengthLong": {
+    "message": "Μεγάλη",
+    "description": "Length option: long"
+  },
+  "summaryStyleGeneral": {
+    "message": "Γενική",
+    "description": "Summary style: general"
+  },
+  "summaryStyleBullet": {
+    "message": "Κύρια Σημεία",
+    "description": "Summary style: bullet points"
+  },
+  "summaryStyleDetailed": {
+    "message": "Λεπτομερής",
+    "description": "Summary style: detailed"
+  },
+  "btnGenerateSummary": {
+    "message": "Δημιουργία Περίληψης",
+    "description": "Generate summary button"
+  },
+  "summaryPlaceholder": {
+    "message": "Η περίληψη που δημιουργήθηκε από AI θα εμφανιστεί εδώ...",
+    "description": "Summary area placeholder"
+  },
+  "sectionExport": {
+    "message": "💾 Εξαγωγή",
+    "description": "Export section title"
+  },
+  "btnSaveAsTxt": {
+    "message": "Αποθήκευση ως TXT",
+    "description": "Save as TXT button"
+  },
+  "btnCopyToClipboard": {
+    "message": "Αντιγραφή στο Πρόχειρο",
+    "description": "Copy to clipboard button"
+  },
+  "footerText": {
+    "message": "✨ Μετεγγραφή φωνής σε πραγματικό χρόνο με έξυπνη περίληψη",
+    "description": "Footer text"
+  },
+  "errorNoMicrophone": {
+    "message": "Σφάλμα: Το πρόγραμμα περιήγησης δεν υποστηρίζει πρόσβαση στο μικρόφωνο",
+    "description": "Error: browser doesn't support microphone"
+  },
+  "errorPermissionDenied": {
+    "message": "Σφάλμα: Οι άδειες μικροφώνου απορρίφθηκαν. Επιτρέψτε την πρόσβαση στο μικρόφωνο.",
+    "description": "Error: permissions denied"
+  },
+  "errorNoSpeech": {
+    "message": "Σφάλμα: Δεν ανιχνεύθηκε ομιλία. Δοκιμάστε να μιλήσετε πιο κοντά στο μικρόφωνο.",
+    "description": "Error: no speech detected"
+  },
+  "errorAudioCapture": {
+    "message": "Σφάλμα: Δεν είναι δυνατή η πρόσβαση στο μικρόφωνο. Ελέγξτε αν χρησιμοποιείται από άλλη εφαρμογή.",
+    "description": "Error: cannot access microphone"
+  },
+  "errorNetwork": {
+    "message": "Σφάλμα: Πρόβλημα δικτύου. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.",
+    "description": "Error: network problem"
+  },
+  "errorAborted": {
+    "message": "Η εγγραφή διακόπηκε.",
+    "description": "Error: recording interrupted"
+  },
+  "errorNoDevice": {
+    "message": "Σφάλμα: Δεν βρέθηκε συσκευή μικροφώνου.",
+    "description": "Error: no device found"
+  },
+  "errorDeviceBusy": {
+    "message": "Σφάλμα: Το μικρόφωνο χρησιμοποιείται από άλλη εφαρμογή.",
+    "description": "Error: device busy"
+  },
+  "errorNotSecure": {
+    "message": "Σφάλμα: Το περιβάλλον δεν είναι ασφαλές (χρησιμοποιήστε HTTPS).",
+    "description": "Error: context not secure"
+  },
+  "errorStartRecording": {
+    "message": "Σφάλμα κατά την έναρξη εγγραφής",
+    "description": "Error: couldn't start recording"
+  },
+  "alertNoSupport": {
+    "message": "Το πρόγραμμα περιήγησης δεν υποστηρίζει αναγνώριση ομιλίας. Δοκιμάστε Chrome ή Edge.",
+    "description": "Alert: browser not compatible"
+  },
+  "alertNotAvailable": {
+    "message": "Η αναγνώριση ομιλίας δεν είναι διαθέσιμη στο πρόγραμμα περιήγησής σας.",
+    "description": "Alert: recognition not available"
+  },
+  "alertNoTextToSummarize": {
+    "message": "Δεν υπάρχει κείμενο για περίληψη.",
+    "description": "Alert: no text to summarize"
+  },
+  "alertNoContentToSave": {
+    "message": "Δεν υπάρχει περιεχόμενο για αποθήκευση.",
+    "description": "Alert: no content to save"
+  },
+  "alertNoContentToCopy": {
+    "message": "Δεν υπάρχει περιεχόμενο για αντιγραφή.",
+    "description": "Alert: no content to copy"
+  },
+  "alertCopiedToClipboard": {
+    "message": "Το περιεχόμενο αντιγράφηκε στο πρόχειρο.",
+    "description": "Alert: copied to clipboard"
+  },
+  "alertCopyError": {
+    "message": "Σφάλμα αντιγραφής στο πρόχειρο.",
+    "description": "Alert: copy error"
+  },
+  "alertSummaryError": {
+    "message": "Προέκυψε σφάλμα κατά τη δημιουργία περίληψης.",
+    "description": "Alert: summary generation error"
+  },
+  "alertPermissionRequest": {
+    "message": "Επιτρέψτε την πρόσβαση στο μικρόφωνο στις ρυθμίσεις του προγράμματος περιήγησης.",
+    "description": "Alert: permission request"
+  },
+  "statusPermissionWindow": {
+    "message": "Χρειαζόμαστε άδειες. Θα ανοίξει ένα παράθυρο για να χορηγήσετε πρόσβαση στο μικρόφωνο...",
+    "description": "Status: permission window"
+  },
+  "statusPermissionsGrantedFromWindow": {
+    "message": "Οι άδειες χορηγήθηκαν. Εκκίνηση...",
+    "description": "Status: permissions granted from window"
+  },
+  "statusPermissionsNotGranted": {
+    "message": "Οι άδειες δεν χορηγήθηκαν.",
+    "description": "Status: permissions not granted"
+  },
+  "transcribedTextHeader": {
+    "message": "=== ΜΕΤΕΓΓΡΑΜΜΕΝΟ ΚΕΙΜΕΝΟ ===",
+    "description": "Transcribed text header in export"
+  },
+  "summaryHeader": {
+    "message": "=== ΠΕΡΙΛΗΨΗ ===",
+    "description": "Summary header in export"
+  },
+  "generatedOn": {
+    "message": "Δημιουργήθηκε στις:",
+    "description": "Text 'Generated on' in export"
+  },
+  "localSummaryKeyPoints": {
+    "message": "Κύρια Σημεία:",
+    "description": "Text for local summary in key points"
+  },
+  "localSummaryDetailed": {
+    "message": "Λεπτομερής Περίληψη:",
+    "description": "Text for local detailed summary"
+  },
+  "localSummaryGeneral": {
+    "message": "Περίληψη:",
+    "description": "Text for local general summary"
+  },
+  "localSummaryError": {
+    "message": "Δεν ήταν δυνατή η δημιουργία περίληψης από το παρεχόμενο κείμενο.",
+    "description": "Error in local summary"
+  },
+  "permissionsTitle": {
+    "message": "Επιτρέψτε πρόσβαση στο μικρόφωνο",
+    "description": "Permissions window title"
+  },
+  "permissionsDescription": {
+    "message": "Κάντε κλικ στο \"Επιτρέπεται\" όταν το Chrome εμφανίσει το διάλογο αδειών. Εάν δεν εμφανιστεί, πατήστε το κουμπί παρακάτω.",
+    "description": "Permissions window description"
+  },
+  "permissionsButton": {
+    "message": "Αίτημα άδειας",
+    "description": "Request permission button"
+  },
+  "backgroundInstalled": {
+    "message": "Η επέκταση Μετεγγραφή Φωνής + AI εγκαταστάθηκε",
+    "description": "Installation message in background"
+  },
+  "backgroundRequestingPermission": {
+    "message": "Αίτημα αδειών μικροφώνου από το σενάριο παρασκηνίου...",
+    "description": "Permission request message in background"
+  },
+  "voiceLanguageLabel": {
+    "message": "🗣️ Γλώσσα Φωνής:",
+    "description": "Voice language selector label"
+  },
+  "sectionRating": {
+    "message": "⭐ Rate us & Support",
+    "description": "Rating section title"
+  },
+  "rateUsTitle": {
+    "message": "Rate us:",
+    "description": "Rate us title"
+  },
+  "needHelpTitle": {
+    "message": "Need help?",
+    "description": "Need help title"
+  },
+  "copySupportEmail": {
+    "message": "Copy support email",
+    "description": "Copy support email button"
+  },
+  "shareApp": {
+    "message": "Share",
+    "description": "Share button"
+  },
+  "emailCopied": {
+    "message": "Support email copied to clipboard!",
+    "description": "Email copied confirmation"
+  },
+  "thankYouRating": {
+    "message": "Thank you for your rating!",
+    "description": "Thank you for rating message"
+  }
+}
