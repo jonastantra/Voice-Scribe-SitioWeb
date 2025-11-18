@@ -59,48 +59,49 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+    // Clave de API de OpenAI (¡IMPORTANTE: Reemplaza con tu propia clave!)
+    const OPENAI_API_KEY = 'tu-api-key-aqui';
+    
     // ==========================================
     // FUNCIONALIDAD DE CAMBIO DE MODO (TOGGLE)
     // ==========================================
     
-    // Inicializar estado del toggle (popup mode)
-    modeToggleCheckbox.checked = false;
+    // Inicializar estado del toggle (sidebar mode)
+    if (modeToggleCheckbox) {
+        modeToggleCheckbox.checked = true;
+    }
     
     // Manejar cambio de modo con el toggle
     if (viewToggle) {
         viewToggle.addEventListener('click', async (e) => {
             e.preventDefault();
             
-            // Cambiar a modo sidebar
-            await chrome.storage.local.set({ 'displayMode': 'sidebar' });
+            // Cambiar a modo popup
+            await chrome.storage.local.set({ 'displayMode': 'popup' });
             
-            // Cerrar el popup primero
-            window.close();
-            
-            // Enviar mensaje al background para abrir sidebar
+            // Enviar mensaje al background para cerrar sidebar
             chrome.runtime.sendMessage({
-                action: 'openSidebar'
+                action: 'closeSidebar'
             }, (response) => {
-                // El popup ya estará cerrado cuando llegue la respuesta
-                console.log('Sidebar abierto');
+                // Cerrar el sidebar
+                window.close();
             });
         });
     }
     
-    // Clave de API de OpenAI (¡IMPORTANTE: Reemplaza con tu propia clave!)
-    const OPENAI_API_KEY = 'tu-api-key-aqui';
+    // ==========================================
+    // FUNCIONALIDAD DE PERMISOS DE MICRÓFONO
+    // ==========================================
     
-    // Función para solicitar permisos del micrófono directamente desde el popup (MV3 no permite getUserMedia en background)
     async function requestMicrophonePermission() {
         try {
-            console.log('Solicitando permisos del micrófono (popup)...');
+            console.log('Solicitando permisos del micrófono (sidebar)...');
 
             if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
                 statusText.textContent = chrome.i18n.getMessage('errorNoMicrophone');
                 return false;
             }
 
-            // Solicitar permiso directamente (tras gesto del usuario)
             const stream = await navigator.mediaDevices.getUserMedia({
                 audio: {
                     echoCancellation: true,
@@ -109,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            // Detener inmediatamente (solo necesitamos el permiso)
             stream.getTracks().forEach(track => track.stop());
             console.log('Permisos del micrófono concedidos');
             statusText.textContent = chrome.i18n.getMessage('statusPermissionsGranted');
@@ -117,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
         } catch (error) {
             console.error('Error al solicitar permisos de micrófono:', error, 'name:', error?.name, 'message:', error?.message);
 
-            // Si el popup no puede mostrar el prompt de permisos, abrir una ventana dedicada
             if (error && (error.name === 'NotAllowedError' || error.name === 'AbortError' || error.name === 'InvalidStateError')) {
                 statusText.textContent = chrome.i18n.getMessage('statusPermissionWindow');
                 const permitted = await openPermissionWindowAndWait();
@@ -146,7 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Abre una ventana de permisos y espera el resultado
     function openPermissionWindowAndWait() {
         return new Promise((resolve) => {
             let resolved = false;
@@ -186,9 +184,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Función para cargar mensajes i18n en elementos HTML
+    // ==========================================
+    // FUNCIONALIDAD DE TRANSCRIPCIÓN
+    // ==========================================
+    
     function loadI18nMessages() {
-        // Traducir elementos con atributo data-i18n
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             const message = chrome.i18n.getMessage(key);
@@ -197,7 +197,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Traducir placeholders
         document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
             const key = element.getAttribute('data-i18n-placeholder');
             const message = chrome.i18n.getMessage(key);
@@ -206,11 +205,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Actualizar título de la página
         document.title = chrome.i18n.getMessage('extTitle');
     }
     
-    // Función para actualizar estadísticas del texto
     function updateTextStats() {
         const text = transcribedText.value;
         const words = text.trim() ? text.trim().split(/\s+/).length : 0;
@@ -220,7 +217,6 @@ document.addEventListener('DOMContentLoaded', function() {
         charCount.textContent = chrome.i18n.getMessage('charCount', [chars.toString()]);
     }
     
-    // Función para inicializar el reconocimiento de voz
     function initRecognition() {
         if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
             const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -247,21 +243,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 const transcript = event.results[i][0].transcript;
                 
                 if (event.results[i].isFinal) {
-                    // Agregar al texto final
                     finalTranscript += transcript;
                 } else {
-                    // Texto provisional (en tiempo real)
                     interimTranscript += transcript;
                 }
             }
             
-            // Mostrar texto final + texto provisional
             transcribedText.value = finalTranscript + interimTranscript;
-            
-            // Actualizar estadísticas
             updateTextStats();
-            
-            // Hacer scroll automático al final
             transcribedText.scrollTop = transcribedText.scrollHeight;
         };
         
@@ -269,7 +258,6 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error en reconocimiento:', event.error);
             stopRecording();
             
-            // Manejo específico de errores
             switch(event.error) {
                 case 'not-allowed':
                     statusText.textContent = chrome.i18n.getMessage('errorPermissionDenied');
@@ -294,7 +282,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         recognition.onend = () => {
             if (isRecording) {
-                // Si se detiene inesperadamente, reiniciar
                 console.log('Reiniciando reconocimiento...');
                 setTimeout(() => {
                     if (isRecording) {
@@ -308,7 +295,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Inicializar reconocimiento al cargar
     initRecognition();
     
     // Eventos de los botones
@@ -319,7 +305,6 @@ document.addEventListener('DOMContentLoaded', function() {
     saveBtn.addEventListener('click', saveToFile);
     copyBtn.addEventListener('click', copyToClipboard);
     
-    // Evento para actualizar estadísticas cuando cambia el texto
     transcribedText.addEventListener('input', updateTextStats);
     
     async function startRecording() {
@@ -328,11 +313,9 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Cambiar el estado del botón inmediatamente para feedback visual
         startBtn.disabled = true;
         statusText.textContent = chrome.i18n.getMessage('statusRequestingPermissions');
         
-        // Solicitar permisos del micrófono primero
         const hasPermission = await requestMicrophonePermission();
         if (!hasPermission) {
             startBtn.disabled = false;
@@ -341,7 +324,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         try {
             statusText.textContent = chrome.i18n.getMessage('statusStarting');
-            // Reinicializar con el idioma actual antes de empezar
             if (recognition) {
                 recognition.lang = currentVoiceLang;
             }
@@ -380,16 +362,13 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Mostrar loader
         summaryLoader.style.display = 'inline-block';
         summaryBtn.disabled = true;
         
         try {
-            // Opción 1: Usar API de OpenAI (requiere clave API)
             if (OPENAI_API_KEY !== 'tu-api-key-aqui') {
                 await generateOpenAISummary(text);
             } else {
-                // Opción 2: Resumen local (sin API)
                 const summary = generateLocalSummary(text, summaryLength.value, summaryStyle.value);
                 summaryText.value = summary;
             }
@@ -403,7 +382,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Función para generar resumen con OpenAI
     async function generateOpenAISummary(text) {
         const lengthMap = {
             'short': isSpanish ? 'corto' : 'short',
@@ -422,7 +400,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const styleInstruction = isSpanish ? 'de estilo' : 'in style';
         const textInstruction = isSpanish ? 'del siguiente texto' : 'of the following text';
         
-        console.log(`Generando resumen: ${summaryLength.value} (${lengthMap[summaryLength.value]}) - ${summaryStyle.value} (${styleMap[summaryStyle.value]})`);
         const prompt = `${promptInstruction} ${lengthMap[summaryLength.value]} ${styleInstruction} ${styleMap[summaryStyle.value]} ${textInstruction} ${languageInstruction}: ${text}`;
         
         const response = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -453,17 +430,13 @@ document.addEventListener('DOMContentLoaded', function() {
         summaryText.value = summary;
     }
     
-    // Función para generar resumen local sin API
     function generateLocalSummary(text, length, style) {
-        console.log(`Generando resumen local: ${length} - ${style}`);
-        // Dividir el texto en oraciones
         const sentences = text.split(/[.!?]+/).filter(sentence => sentence.trim().length > 0);
         
         if (sentences.length === 0) {
             return chrome.i18n.getMessage('localSummaryError');
         }
         
-        // Seleccionar oraciones según la longitud deseada
         let selectedSentences;
         switch(length) {
             case 'short':
@@ -479,7 +452,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 selectedSentences = sentences.slice(0, Math.min(3, sentences.length));
         }
         
-        // Generar resumen según el estilo
         let summary = '';
         switch(style) {
             case 'bullet':
@@ -493,7 +465,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 summary = chrome.i18n.getMessage('localSummaryGeneral') + ' ' + selectedSentences.join('. ');
         }
         
-        // Agregar puntos finales si no los tienen
         if (!summary.endsWith('.') && !summary.endsWith('!') && !summary.endsWith('?')) {
             summary += '.';
         }
@@ -501,7 +472,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return summary;
     }
     
-    // Función para guardar como archivo
     function saveToFile() {
         const text = transcribedText.value.trim();
         const summary = summaryText.value.trim();
@@ -536,7 +506,6 @@ document.addEventListener('DOMContentLoaded', function() {
         URL.revokeObjectURL(url);
     }
     
-    // Función para copiar al portapapeles
     async function copyToClipboard() {
         const text = transcribedText.value.trim();
         const summary = summaryText.value.trim();
@@ -566,7 +535,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Cargar texto guardado al abrir el popup
+    // Cargar texto guardado al abrir
     chrome.storage.local.get(['transcribedText', 'summaryText'], function(result) {
         if (result.transcribedText) {
             transcribedText.value = result.transcribedText;
@@ -587,9 +556,7 @@ document.addEventListener('DOMContentLoaded', function() {
         chrome.storage.local.set({ 'summaryText': summaryText.value });
     });
     
-    // Inicializar estadísticas
     updateTextStats();
-});
     
     // ==========================================
     // FUNCIONALIDAD DE CALIFICACIÓN Y SOPORTE
@@ -599,17 +566,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const stars = document.querySelectorAll('.star');
     const copySupportEmailBtn = document.getElementById('copySupportEmailBtn');
     
-    // Email de soporte
     const SUPPORT_EMAIL = 'jonastantra@gmail.com';
-    
-    // Enlaces de calificación
     const FEEDBACK_FORM_URL = 'https://forms.gle/HFFV3wvNPEChqmGN6';
     const CHROME_STORE_URL = 'https://chromewebstore.google.com/detail/voice-transcription-+-ai/pcklabcphhbkoghekdbpcplmjbdkfnbi?authuser=0&hl=es-419';
     
-    // Estado de calificación seleccionada
     let selectedRating = 0;
     
-    // Efecto hover en estrellas
     stars.forEach((star, index) => {
         star.addEventListener('mouseenter', () => {
             highlightStars(index + 1);
@@ -619,7 +581,6 @@ document.addEventListener('DOMContentLoaded', function() {
             selectedRating = index + 1;
             selectStars(selectedRating);
             
-            // Agregar animación
             star.classList.add('animate');
             setTimeout(() => {
                 star.classList.remove('animate');
@@ -636,7 +597,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Restaurar estrellas al salir del contenedor
     if (starsContainer) {
         starsContainer.addEventListener('mouseleave', () => {
             if (selectedRating > 0) {
@@ -647,7 +607,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Función para resaltar estrellas (hover)
     function highlightStars(count) {
         stars.forEach((star, index) => {
             if (index < count) {
@@ -658,7 +617,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Función para seleccionar estrellas (click)
     function selectStars(count) {
         stars.forEach((star, index) => {
             if (index < count) {
@@ -670,14 +628,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Función para limpiar estrellas
     function clearStars() {
         stars.forEach(star => {
             star.classList.remove('hover', 'selected');
         });
     }
     
-    // Copiar email de soporte
     if (copySupportEmailBtn) {
         copySupportEmailBtn.addEventListener('click', async () => {
             try {
@@ -685,7 +641,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert(chrome.i18n.getMessage('emailCopied'));
             } catch (error) {
                 console.error('Error al copiar email:', error);
-                // Fallback: crear un elemento temporal
                 const tempInput = document.createElement('input');
                 tempInput.value = SUPPORT_EMAIL;
                 document.body.appendChild(tempInput);
@@ -696,3 +651,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+});

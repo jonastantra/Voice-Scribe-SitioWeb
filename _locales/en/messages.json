@@ -310,5 +310,13 @@
   "thankYouRating": {
     "message": "Thank you for your rating!",
     "description": "Thank you for rating message"
+  },
+  "modePopup": {
+    "message": "Popup",
+    "description": "Popup floating mode"
+  },
+  "modeSidebar": {
+    "message": "Side Panel",
+    "description": "Side panel mode"
   }
 }

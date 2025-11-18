@@ -6,30 +6,31 @@
     <title data-i18n="extTitle"></title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="popup-mode">
-    <div class="container popup-container">
-        <!-- Header with Toggle -->
-        <div class="header-modern">
-            <div class="header-title">
-                <span class="header-icon">🎙️</span>
-                <h1 data-i18n="headerTitle">Voice Transcription</h1>
-            </div>
+<body class="sidebar-mode">
+    <div class="container sidebar-container">
+        <!-- Sticky Header with Toggle -->
+        <div class="header-modern sidebar-header">
             <div class="view-toggle" id="viewToggle" title="Change view mode">
                 <span class="toggle-label compact">📱</span>
                 <div class="toggle-switch">
-                    <input type="checkbox" id="modeToggleCheckbox" />
+                    <input type="checkbox" id="modeToggleCheckbox" checked />
                     <span class="toggle-slider"></span>
                 </div>
                 <span class="toggle-label expanded">📊</span>
             </div>
+            
+            <div class="header-title sidebar-title">
+                <span class="header-icon">🎙️</span>
+                <h1 data-i18n="headerTitle">Voice Transcription</h1>
+            </div>
         </div>
         
-        <div class="content-modern">
+        <div class="content-modern sidebar-content">
             <!-- Recording Section -->
-            <section class="section-card">
+            <section class="section-card sidebar-section">
                 <div class="section-header">
-                    <span class="section-icon">🎤</span>
-                    <h2 class="section-title" data-i18n="sectionRecording">Voice Recording</h2>
+                    <span class="section-icon-large">🎤</span>
+                    <h2 class="section-title-large">VOICE RECORDING</h2>
                 </div>
                 
                 <div class="language-selector-modern">
@@ -53,8 +54,8 @@
                     </select>
                 </div>
                 
-                <div class="recording-controls">
-                    <button id="startBtn" class="btn-large btn-start">
+                <div class="recording-controls sidebar-controls">
+                    <button id="startBtn" class="btn-large btn-start btn-sidebar">
                         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="10"></circle>
                             <circle cx="12" cy="12" r="3" fill="currentColor"></circle>
@@ -62,7 +63,7 @@
                         <span data-i18n="btnStartRecording">Start Recording</span>
                     </button>
                     
-                    <button id="stopBtn" class="btn-large btn-stop" disabled>
+                    <button id="stopBtn" class="btn-large btn-stop btn-sidebar" disabled>
                         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="6" y="6" width="12" height="12" fill="currentColor"></rect>
                         </svg>
@@ -70,20 +71,22 @@
                     </button>
                 </div>
                 
-                <div class="status-modern" id="statusIndicator">
+                <div class="status-modern status-sidebar" id="statusIndicator">
                     <div class="status-dot" id="statusDot"></div>
                     <span class="status-text" id="statusText" data-i18n="statusReady">Ready to record</span>
                 </div>
             </section>
             
+            <div class="sidebar-divider"></div>
+            
             <!-- Transcription Section -->
-            <section class="section-card">
+            <section class="section-card sidebar-section transcription-section">
                 <div class="section-header">
-                    <span class="section-icon">📝</span>
-                    <h2 class="section-title" data-i18n="sectionTranscription">Transcribed Text</h2>
+                    <span class="section-icon-large">📝</span>
+                    <h2 class="section-title-large">TRANSCRIPTION</h2>
                 </div>
                 
-                <div class="transcription-wrapper">
+                <div class="transcription-wrapper sidebar-transcription">
                     <div class="real-time-badge" id="realTimeBadge">
                         <span class="pulse-dot"></span>
                         <span data-i18n="realTimeIndicator">Recording...</span>
@@ -91,9 +94,9 @@
                     
                     <textarea 
                         id="transcribedText" 
-                        class="textarea-modern" 
+                        class="textarea-modern textarea-sidebar" 
                         data-i18n-placeholder="transcriptionPlaceholder"
-                        placeholder="Transcribed text will appear here..."
+                        placeholder="Transcribed text will appear here in real-time..."
                     ></textarea>
                     
                     <div class="text-stats-modern">
@@ -109,30 +112,32 @@
                     </div>
                 </div>
                 
-                <div class="action-buttons">
-                    <button id="clearBtn" class="btn-secondary">
+                <div class="action-buttons-grid">
+                    <button id="clearBtn" class="btn-secondary btn-grid">
                         <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"></path>
                         </svg>
                         <span data-i18n="btnClearAll">Clear</span>
                     </button>
                     
-                    <button id="summaryBtn" class="btn-primary">
+                    <button id="summaryBtn" class="btn-primary btn-grid">
                         <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                         </svg>
-                        <span data-i18n="btnGenerateSummary">AI Summary</span>
+                        <span data-i18n="btnGenerateSummary">Summary</span>
                         <span class="loader-small" id="summaryLoader"></span>
                     </button>
                 </div>
             </section>
             
+            <div class="sidebar-divider"></div>
+            
             <!-- AI Summary Section (Collapsible) -->
-            <details class="section-card collapsible-section" id="summarySection">
+            <details class="section-card sidebar-section collapsible-section" id="summarySection">
                 <summary class="section-header-clickable">
                     <div class="section-header-content">
-                        <span class="section-icon">🤖</span>
-                        <h2 class="section-title" data-i18n="sectionSummary">AI Summary</h2>
+                        <span class="section-icon-large">🤖</span>
+                        <h2 class="section-title-large">AI SUMMARY</h2>
                     </div>
                     <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polyline points="6 9 12 15 18 9"></polyline>
@@ -140,7 +145,7 @@
                 </summary>
                 
                 <div class="summary-content">
-                    <div class="summary-controls">
+                    <div class="summary-controls sidebar-controls-inline">
                         <select id="summaryLength" class="select-compact">
                             <option value="short" data-i18n="summaryLengthShort">Short</option>
                             <option value="medium" selected data-i18n="summaryLengthMedium">Medium</option>
@@ -156,7 +161,7 @@
                     
                     <textarea 
                         id="summaryText" 
-                        class="textarea-modern summary-area" 
+                        class="textarea-modern summary-area sidebar-summary" 
                         data-i18n-placeholder="summaryPlaceholder"
                         placeholder="AI summary will appear here..."
                         readonly
@@ -165,18 +170,18 @@
             </details>
             
             <!-- Export Section (Collapsible) -->
-            <details class="section-card collapsible-section">
+            <details class="section-card sidebar-section collapsible-section">
                 <summary class="section-header-clickable">
                     <div class="section-header-content">
-                        <span class="section-icon">💾</span>
-                        <h2 class="section-title" data-i18n="sectionExport">Export</h2>
+                        <span class="section-icon-large">💾</span>
+                        <h2 class="section-title-large">EXPORT</h2>
                     </div>
                     <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                 </summary>
                 
-                <div class="export-actions">
+                <div class="export-actions sidebar-export">
                     <button id="saveBtn" class="btn-secondary btn-block">
                         <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"></path>
@@ -197,11 +202,11 @@
             </details>
             
             <!-- Rating Section (Collapsible) -->
-            <details class="section-card collapsible-section">
+            <details class="section-card sidebar-section collapsible-section">
                 <summary class="section-header-clickable">
                     <div class="section-header-content">
-                        <span class="section-icon">⭐</span>
-                        <h2 class="section-title" data-i18n="sectionRating">Rate & Support</h2>
+                        <span class="section-icon-large">⭐</span>
+                        <h2 class="section-title-large">RATE & SUPPORT</h2>
                     </div>
                     <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polyline points="6 9 12 15 18 9"></polyline>
@@ -238,11 +243,11 @@
             </details>
         </div>
         
-        <div class="footer-modern">
+        <div class="footer-modern sidebar-footer">
             <p data-i18n="footerText">✨ Real-time voice transcription with AI</p>
         </div>
     </div>
 
-    <script src="popup.js"></script>
+    <script src="sidebar.js"></script>
 </body>
 </html>

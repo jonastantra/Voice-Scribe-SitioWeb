@@ -310,5 +310,13 @@
   "thankYouRating": {
     "message": "¡Gracias por tu calificación!",
     "description": "Mensaje de agradecimiento por calificación"
+  },
+  "modePopup": {
+    "message": "Flotante",
+    "description": "Modo popup flotante"
+  },
+  "modeSidebar": {
+    "message": "Panel Lateral",
+    "description": "Modo panel lateral"
   }
 }
