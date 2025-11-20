@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Cargar traducciones i18n
+document.addEventListener('DOMContentLoaded', async function() {
+    // Cargar traducciones i18n primero
     loadI18nMessages();
     
     // Detectar idioma del navegador para la interfaz
@@ -24,10 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const realTimeIndicator = document.getElementById('realTimeIndicator');
     const wordCount = document.getElementById('wordCount');
     const charCount = document.getElementById('charCount');
+    const copyTranscriptionBtn = document.getElementById('copyTranscriptionBtn');
     
     // Toggle de cambio de modo
     const modeToggleCheckbox = document.getElementById('modeToggleCheckbox');
     const viewToggle = document.getElementById('viewToggle');
+    const sidebarHintBanner = document.getElementById('sidebarHintBanner');
+    const closeBanner = document.getElementById('closeBanner');
     
     // Variables para el reconocimiento de voz
     let recognition;
@@ -64,31 +67,114 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     
     // Inicializar estado del toggle (popup mode)
-    modeToggleCheckbox.checked = false;
+    if (modeToggleCheckbox) {
+        modeToggleCheckbox.checked = false;
+    }
     
     // Manejar cambio de modo con el toggle
     if (viewToggle) {
         viewToggle.addEventListener('click', async (e) => {
             e.preventDefault();
+            e.stopPropagation();
             
-            // Cambiar a modo sidebar
-            await chrome.storage.local.set({ 'displayMode': 'sidebar' });
+            const isCurrentlyPopup = !modeToggleCheckbox.checked;
             
-            // Cerrar el popup primero
-            window.close();
-            
-            // Enviar mensaje al background para abrir sidebar
-            chrome.runtime.sendMessage({
-                action: 'openSidebar'
-            }, (response) => {
-                // El popup ya estará cerrado cuando llegue la respuesta
-                console.log('Sidebar abierto');
-            });
+            if (isCurrentlyPopup) {
+                // Cambiar a modo SIDEBAR
+                console.log('Toggle clickeado, cambiando a modo sidebar...');
+                
+                try {
+                    // Cambiar a modo sidebar y guardarlo como preferencia
+                    await chrome.storage.local.set({ 'displayMode': 'sidebar' });
+                    console.log('Preferencia guardada: modo sidebar');
+                    
+                    // Obtener la pestaña activa
+                    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+                    
+                    if (tab && tab.windowId) {
+                        // Abrir el sidebar directamente (esto FUNCIONA porque es respuesta a un clic)
+                        await chrome.sidePanel.open({ windowId: tab.windowId });
+                        console.log('✅ Sidebar abierto exitosamente - Ya NO se cerrará');
+                        
+                        // Cerrar el popup después de un pequeño delay
+                        setTimeout(() => {
+                            window.close();
+                        }, 100);
+                    } else {
+                        console.error('No se pudo obtener la pestaña activa');
+                        alert('Error al abrir el panel lateral. Por favor, intenta de nuevo.');
+                    }
+                } catch (error) {
+                    console.error('Error al cambiar a modo sidebar:', error);
+                    alert('Error al abrir el panel lateral: ' + error.message);
+                }
+            } else {
+                // Ya está en sidebar, cambiar a popup
+                await chrome.storage.local.set({ 'displayMode': 'popup' });
+                console.log('Preferencia cambiada a popup (se cerrará al hacer clic fuera)');
+                modeToggleCheckbox.checked = false;
+            }
         });
     }
     
     // Clave de API de OpenAI (¡IMPORTANTE: Reemplaza con tu propia clave!)
     const OPENAI_API_KEY = 'tu-api-key-aqui';
+    
+    // Variable para almacenar el estado de conectividad del servidor
+    let serverStatus = {
+        openai: 'unknown', // 'online', 'offline', 'unknown'
+        lastCheck: null
+    };
+    
+    // Función para verificar el estado de la API de OpenAI
+    async function checkServerStatus() {
+        // Solo verificar si se está usando la API de OpenAI
+        if (OPENAI_API_KEY === 'tu-api-key-aqui') {
+            serverStatus.openai = 'not-configured';
+            return { success: true, mode: 'local' };
+        }
+        
+        try {
+            console.log('Verificando estado del servidor OpenAI...');
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 segundos de timeout
+            
+            const response = await fetch('https://api.openai.com/v1/models', {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${OPENAI_API_KEY}`
+                },
+                signal: controller.signal
+            });
+            
+            clearTimeout(timeoutId);
+            
+            if (response.ok) {
+                serverStatus.openai = 'online';
+                serverStatus.lastCheck = Date.now();
+                console.log('✅ Servidor OpenAI: Online');
+                return { success: true, mode: 'api' };
+            } else if (response.status === 401) {
+                serverStatus.openai = 'auth-error';
+                console.warn('⚠️ Error de autenticación con OpenAI API');
+                return { success: false, error: 'auth', message: isSpanish ? 'Clave API inválida' : 'Invalid API key' };
+            } else {
+                serverStatus.openai = 'error';
+                console.warn('⚠️ Error del servidor OpenAI:', response.status);
+                return { success: false, error: 'server', message: isSpanish ? 'Error del servidor' : 'Server error' };
+            }
+        } catch (error) {
+            if (error.name === 'AbortError') {
+                serverStatus.openai = 'timeout';
+                console.error('❌ Timeout al conectar con OpenAI');
+                return { success: false, error: 'timeout', message: isSpanish ? 'Tiempo de espera agotado' : 'Connection timeout' };
+            } else {
+                serverStatus.openai = 'offline';
+                console.error('❌ No se pudo conectar con OpenAI:', error);
+                return { success: false, error: 'network', message: isSpanish ? 'Sin conexión al servidor' : 'No server connection' };
+            }
+        }
+    }
     
     // Función para solicitar permisos del micrófono directamente desde el popup (MV3 no permite getUserMedia en background)
     async function requestMicrophonePermission() {
@@ -319,6 +405,11 @@ document.addEventListener('DOMContentLoaded', function() {
     saveBtn.addEventListener('click', saveToFile);
     copyBtn.addEventListener('click', copyToClipboard);
     
+    // Evento para copiar solo la transcripción
+    if (copyTranscriptionBtn) {
+        copyTranscriptionBtn.addEventListener('click', copyTranscriptionOnly);
+    }
+    
     // Evento para actualizar estadísticas cuando cambia el texto
     transcribedText.addEventListener('input', updateTextStats);
     
@@ -385,18 +476,55 @@ document.addEventListener('DOMContentLoaded', function() {
         summaryBtn.disabled = true;
         
         try {
-            // Opción 1: Usar API de OpenAI (requiere clave API)
+            // Verificar estado del servidor si se usa API
             if (OPENAI_API_KEY !== 'tu-api-key-aqui') {
+                console.log('🔍 Verificando conectividad del servidor...');
+                const serverCheck = await checkServerStatus();
+                
+                if (!serverCheck.success) {
+                    // Mostrar error específico según el tipo
+                    let errorMessage = '';
+                    switch (serverCheck.error) {
+                        case 'auth':
+                            errorMessage = isSpanish 
+                                ? '❌ Error de autenticación: Verifica tu clave API de OpenAI' 
+                                : '❌ Authentication error: Check your OpenAI API key';
+                            break;
+                        case 'timeout':
+                            errorMessage = isSpanish 
+                                ? '⏱️ Tiempo de espera agotado: El servidor no responde. Intenta de nuevo.' 
+                                : '⏱️ Connection timeout: Server not responding. Try again.';
+                            break;
+                        case 'network':
+                            errorMessage = isSpanish 
+                                ? '🌐 Sin conexión: Verifica tu conexión a internet' 
+                                : '🌐 No connection: Check your internet connection';
+                            break;
+                        default:
+                            errorMessage = serverCheck.message;
+                    }
+                    
+                    alert(errorMessage);
+                    summaryLoader.style.display = 'none';
+                    summaryBtn.disabled = false;
+                    return;
+                }
+                
+                console.log('✅ Servidor verificado, generando resumen con API...');
                 await generateOpenAISummary(text);
             } else {
                 // Opción 2: Resumen local (sin API)
+                console.log('📝 Generando resumen local...');
                 const summary = generateLocalSummary(text, summaryLength.value, summaryStyle.value);
                 summaryText.value = summary;
             }
             
         } catch (error) {
             console.error('Error al generar resumen:', error);
-            alert(chrome.i18n.getMessage('alertSummaryError'));
+            const errorMsg = isSpanish 
+                ? '❌ Error al generar resumen: ' + (error.message || 'Error desconocido')
+                : '❌ Error generating summary: ' + (error.message || 'Unknown error');
+            alert(errorMsg);
         } finally {
             summaryLoader.style.display = 'none';
             summaryBtn.disabled = false;
@@ -536,6 +664,36 @@ document.addEventListener('DOMContentLoaded', function() {
         URL.revokeObjectURL(url);
     }
     
+    // Función para copiar solo la transcripción
+    async function copyTranscriptionOnly() {
+        const text = transcribedText.value.trim();
+        
+        if (!text) {
+            alert(chrome.i18n.getMessage('alertNoTranscriptionToCopy'));
+            return;
+        }
+        
+        try {
+            await navigator.clipboard.writeText(text);
+            // Feedback visual
+            const originalText = copyTranscriptionBtn.innerHTML;
+            copyTranscriptionBtn.innerHTML = '✓ ' + chrome.i18n.getMessage('alertTranscriptionCopied').replace('¡', '').replace('!', '');
+            copyTranscriptionBtn.style.background = 'var(--success-green)';
+            copyTranscriptionBtn.style.color = 'white';
+            copyTranscriptionBtn.style.borderColor = 'var(--success-green)';
+            
+            setTimeout(() => {
+                copyTranscriptionBtn.innerHTML = originalText;
+                copyTranscriptionBtn.style.background = '';
+                copyTranscriptionBtn.style.color = '';
+                copyTranscriptionBtn.style.borderColor = '';
+            }, 2000);
+        } catch (error) {
+            console.error('Error al copiar transcripción:', error);
+            alert(chrome.i18n.getMessage('alertCopyError'));
+        }
+    }
+    
     // Función para copiar al portapapeles
     async function copyToClipboard() {
         const text = transcribedText.value.trim();
@@ -589,6 +747,43 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Inicializar estadísticas
     updateTextStats();
+    
+    // ==========================================
+    // INICIALIZACIÓN DE PREFERENCIAS Y BANNER
+    // ==========================================
+    
+    // Cargar preferencia de modo
+    const modePreference = await chrome.storage.local.get(['displayMode']);
+    const preferredMode = modePreference.displayMode || 'popup';
+    
+    console.log('Preferencia de modo cargada:', preferredMode);
+    
+    // Si la preferencia es sidebar, marcar el toggle visualmente
+    if (preferredMode === 'sidebar' && modeToggleCheckbox) {
+        console.log('💡 Preferencia guardada: Sidebar');
+        modeToggleCheckbox.checked = true;
+    }
+    
+    // Mostrar banner informativo si el usuario no ha usado el sidebar
+    chrome.storage.local.get(['sidebarHintDismissed'], (result) => {
+        if (!result.sidebarHintDismissed && preferredMode !== 'sidebar') {
+            setTimeout(() => {
+                if (sidebarHintBanner) {
+                    sidebarHintBanner.style.display = 'block';
+                }
+            }, 1000);
+        }
+    });
+    
+    // Cerrar banner
+    if (closeBanner) {
+        closeBanner.addEventListener('click', () => {
+            if (sidebarHintBanner) {
+                sidebarHintBanner.style.display = 'none';
+                chrome.storage.local.set({ 'sidebarHintDismissed': true });
+            }
+        });
+    }
 });
     
     // ==========================================
@@ -596,14 +791,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     
     const starsContainer = document.getElementById('starsContainer');
-    const stars = document.querySelectorAll('.star');
+    const stars = document.querySelectorAll('.star-rating');
     const copySupportEmailBtn = document.getElementById('copySupportEmailBtn');
     
     // Email de soporte
     const SUPPORT_EMAIL = 'jonastantra@gmail.com';
     
     // Enlaces de calificación
-    const FEEDBACK_FORM_URL = 'https://forms.gle/HFFV3wvNPEChqmGN6';
+    const FEEDBACK_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeDyQO5f50X9otPC77CkJkJwCOVbhdV8uHXbMn3NSdLSAl7dA/viewform';
     const CHROME_STORE_URL = 'https://chromewebstore.google.com/detail/voice-transcription-+-ai/pcklabcphhbkoghekdbpcplmjbdkfnbi?authuser=0&hl=es-419';
     
     // Estado de calificación seleccionada

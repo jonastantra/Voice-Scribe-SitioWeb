@@ -310,5 +310,29 @@
   "thankYouRating": {
     "message": "Спасибо за вашу оценку!",
     "description": "Thank you for rating message"
+  },
+  "ratingHelpText": {
+    "message": "Оцените свой опыт",
+    "description": "Rating help text above stars"
+  },
+  "modePopup": {
+    "message": "Всплывающее",
+    "description": "Popup floating mode"
+  },
+  "modeSidebar": {
+    "message": "Боковая панель",
+    "description": "Side panel mode"
+  },
+  "btnCopyTranscription": {
+    "message": "Копировать",
+    "description": "Button to copy only the transcription"
+  },
+  "alertTranscriptionCopied": {
+    "message": "Транскрибированный текст скопирован в буфер обмена!",
+    "description": "Transcribed text copied confirmation"
+  },
+  "alertNoTranscriptionToCopy": {
+    "message": "Нет транскрибированного текста для копирования.",
+    "description": "Alert: no transcription to copy"
   }
 }

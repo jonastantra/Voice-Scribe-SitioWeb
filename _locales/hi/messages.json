@@ -310,5 +310,29 @@
   "thankYouRating": {
     "message": "आपकी रेटिंग के लिए धन्यवाद!",
     "description": "Thank you for rating message"
+  },
+  "ratingHelpText": {
+    "message": "अपने अनुभव को रेट करें",
+    "description": "Rating help text above stars"
+  },
+  "modePopup": {
+    "message": "पॉपअप",
+    "description": "Popup floating mode"
+  },
+  "modeSidebar": {
+    "message": "साइड पैनल",
+    "description": "Side panel mode"
+  },
+  "btnCopyTranscription": {
+    "message": "कॉपी करें",
+    "description": "Button to copy only the transcription"
+  },
+  "alertTranscriptionCopied": {
+    "message": "ट्रांसक्राइब किया गया टेक्स्ट क्लिपबोर्ड पर कॉपी हो गया!",
+    "description": "Transcribed text copied confirmation"
+  },
+  "alertNoTranscriptionToCopy": {
+    "message": "कॉपी करने के लिए कोई ट्रांसक्राइब टेक्स्ट नहीं है।",
+    "description": "Alert: no transcription to copy"
   }
 }

@@ -310,5 +310,29 @@
   "thankYouRating": {
     "message": "Merci pour votre évaluation !",
     "description": "Thank you for rating message"
+  },
+  "ratingHelpText": {
+    "message": "Évaluez votre expérience",
+    "description": "Rating help text above stars"
+  },
+  "modePopup": {
+    "message": "Flottant",
+    "description": "Popup floating mode"
+  },
+  "modeSidebar": {
+    "message": "Panneau Latéral",
+    "description": "Side panel mode"
+  },
+  "btnCopyTranscription": {
+    "message": "Copier",
+    "description": "Button to copy only the transcription"
+  },
+  "alertTranscriptionCopied": {
+    "message": "Texte transcrit copié dans le presse-papiers !",
+    "description": "Transcribed text copied confirmation"
+  },
+  "alertNoTranscriptionToCopy": {
+    "message": "Aucun texte transcrit à copier.",
+    "description": "Alert: no transcription to copy"
   }
 }

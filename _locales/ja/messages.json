@@ -310,5 +310,29 @@
   "thankYouRating": {
     "message": "評価ありがとうございます！",
     "description": "Thank you for rating message"
+  },
+  "ratingHelpText": {
+    "message": "あなたの経験を評価してください",
+    "description": "Rating help text above stars"
+  },
+  "modePopup": {
+    "message": "ポップアップ",
+    "description": "Popup floating mode"
+  },
+  "modeSidebar": {
+    "message": "サイドパネル",
+    "description": "Side panel mode"
+  },
+  "btnCopyTranscription": {
+    "message": "コピー",
+    "description": "Button to copy only the transcription"
+  },
+  "alertTranscriptionCopied": {
+    "message": "文字起こしテキストがクリップボードにコピーされました！",
+    "description": "Transcribed text copied confirmation"
+  },
+  "alertNoTranscriptionToCopy": {
+    "message": "コピーする文字起こしテキストがありません。",
+    "description": "Alert: no transcription to copy"
   }
 }

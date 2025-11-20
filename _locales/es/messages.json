@@ -311,12 +311,28 @@
     "message": "¡Gracias por tu calificación!",
     "description": "Mensaje de agradecimiento por calificación"
   },
+  "ratingHelpText": {
+    "message": "Califica tu experiencia",
+    "description": "Texto de ayuda de calificación sobre las estrellas"
+  },
   "modePopup": {
-    "message": "Flotante",
+    "message": "Flotante (se cierra)",
     "description": "Modo popup flotante"
   },
   "modeSidebar": {
-    "message": "Panel Lateral",
+    "message": "Panel Lateral (permanece abierto)",
     "description": "Modo panel lateral"
+  },
+  "btnCopyTranscription": {
+    "message": "Copiar",
+    "description": "Botón para copiar solo la transcripción"
+  },
+  "alertTranscriptionCopied": {
+    "message": "¡Texto transcrito copiado al portapapeles!",
+    "description": "Confirmación de texto transcrito copiado"
+  },
+  "alertNoTranscriptionToCopy": {
+    "message": "No hay texto transcrito para copiar.",
+    "description": "Alerta: no hay transcripción para copiar"
   }
 }

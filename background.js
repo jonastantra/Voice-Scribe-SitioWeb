@@ -1,34 +1,22 @@
 // Background script para manejar permisos del micrófono y el sidePanel
-chrome.runtime.onInstalled.addListener(() => {
+chrome.runtime.onInstalled.addListener((details) => {
   console.log(chrome.i18n.getMessage('backgroundInstalled'));
   
-  // Establecer modo por defecto
+  // Establecer modo por defecto solo en la primera instalación
   chrome.storage.local.get(['displayMode'], (result) => {
     if (!result.displayMode) {
+      // Por defecto popup (Chrome no permite abrir sidebar sin interacción del usuario)
+      // El usuario debe hacer clic en el toggle para cambiar a sidebar
       chrome.storage.local.set({ 'displayMode': 'popup' });
+      console.log('Modo por defecto: popup (usa el toggle para cambiar a sidebar que no se cierra)');
+    } else {
+      console.log('Modo guardado encontrado:', result.displayMode);
     }
   });
 });
 
-// Manejar clic en el icono de la extensión
-chrome.action.onClicked.addListener(async (tab) => {
-  // Verificar el modo de visualización guardado
-  const result = await chrome.storage.local.get(['displayMode']);
-  const mode = result.displayMode || 'popup';
-  
-  console.log('Modo actual:', mode);
-  
-  if (mode === 'sidebar') {
-    // Abrir sidebar
-    try {
-      await chrome.sidePanel.open({ windowId: tab.windowId });
-      console.log('Sidebar abierto');
-    } catch (error) {
-      console.error('Error al abrir sidebar:', error);
-    }
-  }
-  // Si es 'popup', el comportamiento por defecto del manifest se encarga
-});
+// Este listener NO se ejecutará cuando hay default_popup en el manifest
+// La lógica de redirección está en popup.js
 
 // Manejar comandos de teclado
 chrome.commands.onCommand.addListener(async (command) => {

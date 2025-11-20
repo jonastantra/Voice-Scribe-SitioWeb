@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const realTimeIndicator = document.getElementById('realTimeIndicator');
     const wordCount = document.getElementById('wordCount');
     const charCount = document.getElementById('charCount');
+    const copyTranscriptionBtn = document.getElementById('copyTranscriptionBtn');
     
     // Toggle de cambio de modo
     const modeToggleCheckbox = document.getElementById('modeToggleCheckbox');
@@ -62,6 +63,62 @@ document.addEventListener('DOMContentLoaded', function() {
     // Clave de API de OpenAI (¡IMPORTANTE: Reemplaza con tu propia clave!)
     const OPENAI_API_KEY = 'tu-api-key-aqui';
     
+    // Variable para almacenar el estado de conectividad del servidor
+    let serverStatus = {
+        openai: 'unknown', // 'online', 'offline', 'unknown'
+        lastCheck: null
+    };
+    
+    // Función para verificar el estado de la API de OpenAI
+    async function checkServerStatus() {
+        // Solo verificar si se está usando la API de OpenAI
+        if (OPENAI_API_KEY === 'tu-api-key-aqui') {
+            serverStatus.openai = 'not-configured';
+            return { success: true, mode: 'local' };
+        }
+        
+        try {
+            console.log('Verificando estado del servidor OpenAI...');
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 segundos de timeout
+            
+            const response = await fetch('https://api.openai.com/v1/models', {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${OPENAI_API_KEY}`
+                },
+                signal: controller.signal
+            });
+            
+            clearTimeout(timeoutId);
+            
+            if (response.ok) {
+                serverStatus.openai = 'online';
+                serverStatus.lastCheck = Date.now();
+                console.log('✅ Servidor OpenAI: Online');
+                return { success: true, mode: 'api' };
+            } else if (response.status === 401) {
+                serverStatus.openai = 'auth-error';
+                console.warn('⚠️ Error de autenticación con OpenAI API');
+                return { success: false, error: 'auth', message: isSpanish ? 'Clave API inválida' : 'Invalid API key' };
+            } else {
+                serverStatus.openai = 'error';
+                console.warn('⚠️ Error del servidor OpenAI:', response.status);
+                return { success: false, error: 'server', message: isSpanish ? 'Error del servidor' : 'Server error' };
+            }
+        } catch (error) {
+            if (error.name === 'AbortError') {
+                serverStatus.openai = 'timeout';
+                console.error('❌ Timeout al conectar con OpenAI');
+                return { success: false, error: 'timeout', message: isSpanish ? 'Tiempo de espera agotado' : 'Connection timeout' };
+            } else {
+                serverStatus.openai = 'offline';
+                console.error('❌ No se pudo conectar con OpenAI:', error);
+                return { success: false, error: 'network', message: isSpanish ? 'Sin conexión al servidor' : 'No server connection' };
+            }
+        }
+    }
+    
     // ==========================================
     // FUNCIONALIDAD DE CAMBIO DE MODO (TOGGLE)
     // ==========================================
@@ -76,13 +133,15 @@ document.addEventListener('DOMContentLoaded', function() {
         viewToggle.addEventListener('click', async (e) => {
             e.preventDefault();
             
-            // Cambiar a modo popup
+            // Cambiar a modo popup y guardarlo como preferencia
             await chrome.storage.local.set({ 'displayMode': 'popup' });
+            console.log('Preferencia guardada: modo popup');
             
             // Enviar mensaje al background para cerrar sidebar
             chrome.runtime.sendMessage({
                 action: 'closeSidebar'
             }, (response) => {
+                console.log('Cerrando sidebar, próxima apertura será en popup');
                 // Cerrar el sidebar
                 window.close();
             });
@@ -305,6 +364,11 @@ document.addEventListener('DOMContentLoaded', function() {
     saveBtn.addEventListener('click', saveToFile);
     copyBtn.addEventListener('click', copyToClipboard);
     
+    // Evento para copiar solo la transcripción
+    if (copyTranscriptionBtn) {
+        copyTranscriptionBtn.addEventListener('click', copyTranscriptionOnly);
+    }
+    
     transcribedText.addEventListener('input', updateTextStats);
     
     async function startRecording() {
@@ -366,16 +430,55 @@ document.addEventListener('DOMContentLoaded', function() {
         summaryBtn.disabled = true;
         
         try {
+            // Verificar estado del servidor si se usa API
             if (OPENAI_API_KEY !== 'tu-api-key-aqui') {
+                console.log('🔍 Verificando conectividad del servidor...');
+                const serverCheck = await checkServerStatus();
+                
+                if (!serverCheck.success) {
+                    // Mostrar error específico según el tipo
+                    let errorMessage = '';
+                    switch (serverCheck.error) {
+                        case 'auth':
+                            errorMessage = isSpanish 
+                                ? '❌ Error de autenticación: Verifica tu clave API de OpenAI' 
+                                : '❌ Authentication error: Check your OpenAI API key';
+                            break;
+                        case 'timeout':
+                            errorMessage = isSpanish 
+                                ? '⏱️ Tiempo de espera agotado: El servidor no responde. Intenta de nuevo.' 
+                                : '⏱️ Connection timeout: Server not responding. Try again.';
+                            break;
+                        case 'network':
+                            errorMessage = isSpanish 
+                                ? '🌐 Sin conexión: Verifica tu conexión a internet' 
+                                : '🌐 No connection: Check your internet connection';
+                            break;
+                        default:
+                            errorMessage = serverCheck.message;
+                    }
+                    
+                    alert(errorMessage);
+                    summaryLoader.style.display = 'none';
+                    summaryBtn.disabled = false;
+                    return;
+                }
+                
+                console.log('✅ Servidor verificado, generando resumen con API...');
                 await generateOpenAISummary(text);
             } else {
+                // Resumen local (sin API)
+                console.log('📝 Generando resumen local...');
                 const summary = generateLocalSummary(text, summaryLength.value, summaryStyle.value);
                 summaryText.value = summary;
             }
             
         } catch (error) {
             console.error('Error al generar resumen:', error);
-            alert(chrome.i18n.getMessage('alertSummaryError'));
+            const errorMsg = isSpanish 
+                ? '❌ Error al generar resumen: ' + (error.message || 'Error desconocido')
+                : '❌ Error generating summary: ' + (error.message || 'Unknown error');
+            alert(errorMsg);
         } finally {
             summaryLoader.style.display = 'none';
             summaryBtn.disabled = false;
@@ -506,6 +609,36 @@ document.addEventListener('DOMContentLoaded', function() {
         URL.revokeObjectURL(url);
     }
     
+    // Función para copiar solo la transcripción
+    async function copyTranscriptionOnly() {
+        const text = transcribedText.value.trim();
+        
+        if (!text) {
+            alert(chrome.i18n.getMessage('alertNoTranscriptionToCopy'));
+            return;
+        }
+        
+        try {
+            await navigator.clipboard.writeText(text);
+            // Feedback visual
+            const originalText = copyTranscriptionBtn.innerHTML;
+            copyTranscriptionBtn.innerHTML = '✓ ' + chrome.i18n.getMessage('alertTranscriptionCopied').replace('¡', '').replace('!', '');
+            copyTranscriptionBtn.style.background = 'var(--success-green)';
+            copyTranscriptionBtn.style.color = 'white';
+            copyTranscriptionBtn.style.borderColor = 'var(--success-green)';
+            
+            setTimeout(() => {
+                copyTranscriptionBtn.innerHTML = originalText;
+                copyTranscriptionBtn.style.background = '';
+                copyTranscriptionBtn.style.color = '';
+                copyTranscriptionBtn.style.borderColor = '';
+            }, 2000);
+        } catch (error) {
+            console.error('Error al copiar transcripción:', error);
+            alert(chrome.i18n.getMessage('alertCopyError'));
+        }
+    }
+    
     async function copyToClipboard() {
         const text = transcribedText.value.trim();
         const summary = summaryText.value.trim();
@@ -563,11 +696,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     
     const starsContainer = document.getElementById('starsContainer');
-    const stars = document.querySelectorAll('.star');
+    const stars = document.querySelectorAll('.star-rating');
     const copySupportEmailBtn = document.getElementById('copySupportEmailBtn');
     
     const SUPPORT_EMAIL = 'jonastantra@gmail.com';
-    const FEEDBACK_FORM_URL = 'https://forms.gle/HFFV3wvNPEChqmGN6';
+    const FEEDBACK_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeDyQO5f50X9otPC77CkJkJwCOVbhdV8uHXbMn3NSdLSAl7dA/viewform';
     const CHROME_STORE_URL = 'https://chromewebstore.google.com/detail/voice-transcription-+-ai/pcklabcphhbkoghekdbpcplmjbdkfnbi?authuser=0&hl=es-419';
     
     let selectedRating = 0;

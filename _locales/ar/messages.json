@@ -310,5 +310,29 @@
   "thankYouRating": {
     "message": "شكراً لك على تقييمك!",
     "description": "Thank you for rating message"
+  },
+  "ratingHelpText": {
+    "message": "قيّم تجربتك",
+    "description": "Rating help text above stars"
+  },
+  "modePopup": {
+    "message": "عائم",
+    "description": "Popup floating mode"
+  },
+  "modeSidebar": {
+    "message": "اللوحة الجانبية",
+    "description": "Side panel mode"
+  },
+  "btnCopyTranscription": {
+    "message": "نسخ",
+    "description": "Button to copy only the transcription"
+  },
+  "alertTranscriptionCopied": {
+    "message": "تم نسخ النص المنسوخ إلى الحافظة!",
+    "description": "Transcribed text copied confirmation"
+  },
+  "alertNoTranscriptionToCopy": {
+    "message": "لا يوجد نص منسوخ للنسخ.",
+    "description": "Alert: no transcription to copy"
   }
 }

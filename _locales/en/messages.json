@@ -311,12 +311,28 @@
     "message": "Thank you for your rating!",
     "description": "Thank you for rating message"
   },
+  "ratingHelpText": {
+    "message": "Rate your experience",
+    "description": "Rating help text above stars"
+  },
   "modePopup": {
-    "message": "Popup",
+    "message": "Popup (closes)",
     "description": "Popup floating mode"
   },
   "modeSidebar": {
-    "message": "Side Panel",
+    "message": "Side Panel (stays open)",
     "description": "Side panel mode"
+  },
+  "btnCopyTranscription": {
+    "message": "Copy",
+    "description": "Button to copy only the transcription"
+  },
+  "alertTranscriptionCopied": {
+    "message": "Transcribed text copied to clipboard!",
+    "description": "Transcribed text copied confirmation"
+  },
+  "alertNoTranscriptionToCopy": {
+    "message": "No transcribed text to copy.",
+    "description": "Alert: no transcription to copy"
   }
 }

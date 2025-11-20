@@ -310,5 +310,29 @@
   "thankYouRating": {
     "message": "感谢您的评分！",
     "description": "Thank you for rating message"
+  },
+  "ratingHelpText": {
+    "message": "评价您的体验",
+    "description": "Rating help text above stars"
+  },
+  "modePopup": {
+    "message": "弹出窗口",
+    "description": "Popup floating mode"
+  },
+  "modeSidebar": {
+    "message": "侧边栏",
+    "description": "Side panel mode"
+  },
+  "btnCopyTranscription": {
+    "message": "复制",
+    "description": "Button to copy only the transcription"
+  },
+  "alertTranscriptionCopied": {
+    "message": "转录文本已复制到剪贴板！",
+    "description": "Transcribed text copied confirmation"
+  },
+  "alertNoTranscriptionToCopy": {
+    "message": "没有要复制的转录文本。",
+    "description": "Alert: no transcription to copy"
   }
 }

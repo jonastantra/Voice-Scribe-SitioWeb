@@ -310,5 +310,29 @@
   "thankYouRating": {
     "message": "평가해 주셔서 감사합니다!",
     "description": "Thank you for rating message"
+  },
+  "ratingHelpText": {
+    "message": "경험을 평가해주세요",
+    "description": "Rating help text above stars"
+  },
+  "modePopup": {
+    "message": "팝업",
+    "description": "Popup floating mode"
+  },
+  "modeSidebar": {
+    "message": "사이드 패널",
+    "description": "Side panel mode"
+  },
+  "btnCopyTranscription": {
+    "message": "복사",
+    "description": "Button to copy only the transcription"
+  },
+  "alertTranscriptionCopied": {
+    "message": "전사된 텍스트가 클립보드에 복사되었습니다!",
+    "description": "Transcribed text copied confirmation"
+  },
+  "alertNoTranscriptionToCopy": {
+    "message": "복사할 전사 텍스트가 없습니다.",
+    "description": "Alert: no transcription to copy"
   }
 }
