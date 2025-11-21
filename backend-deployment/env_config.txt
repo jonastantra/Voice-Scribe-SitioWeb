@@ -1,0 +1,4 @@
+# AQUÍ EL USUARIO PONDRÁ SU API KEY
+API_KEY=tu_api_key_aqui
+ALLOWED_EXTENSION_ID=chrome-extension://id_de_tu_extension
+

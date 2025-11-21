@@ -430,44 +430,13 @@ document.addEventListener('DOMContentLoaded', function() {
         summaryBtn.disabled = true;
         
         try {
-            // Verificar estado del servidor si se usa API
-            if (OPENAI_API_KEY !== 'tu-api-key-aqui') {
-                console.log('🔍 Verificando conectividad del servidor...');
-                const serverCheck = await checkServerStatus();
-                
-                if (!serverCheck.success) {
-                    // Mostrar error específico según el tipo
-                    let errorMessage = '';
-                    switch (serverCheck.error) {
-                        case 'auth':
-                            errorMessage = isSpanish 
-                                ? '❌ Error de autenticación: Verifica tu clave API de OpenAI' 
-                                : '❌ Authentication error: Check your OpenAI API key';
-                            break;
-                        case 'timeout':
-                            errorMessage = isSpanish 
-                                ? '⏱️ Tiempo de espera agotado: El servidor no responde. Intenta de nuevo.' 
-                                : '⏱️ Connection timeout: Server not responding. Try again.';
-                            break;
-                        case 'network':
-                            errorMessage = isSpanish 
-                                ? '🌐 Sin conexión: Verifica tu conexión a internet' 
-                                : '🌐 No connection: Check your internet connection';
-                            break;
-                        default:
-                            errorMessage = serverCheck.message;
-                    }
-                    
-                    alert(errorMessage);
-                    summaryLoader.style.display = 'none';
-                    summaryBtn.disabled = false;
-                    return;
-                }
-                
-                console.log('✅ Servidor verificado, generando resumen con API...');
+            // Intentar usar el proxy seguro para generar resumen
+            try {
+                console.log('🔍 Generando resumen con API segura...');
                 await generateOpenAISummary(text);
-            } else {
-                // Resumen local (sin API)
+            } catch (error) {
+                console.warn('⚠️ Fallo al usar API, intentando resumen local...', error);
+                // Fallback a local
                 console.log('📝 Generando resumen local...');
                 const summary = generateLocalSummary(text, summaryLength.value, summaryStyle.value);
                 summaryText.value = summary;
@@ -505,11 +474,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const prompt = `${promptInstruction} ${lengthMap[summaryLength.value]} ${styleInstruction} ${styleMap[summaryStyle.value]} ${textInstruction} ${languageInstruction}: ${text}`;
         
-        const response = await fetch('https://api.openai.com/v1/chat/completions', {
+        // URL del Proxy (Debe ser actualizada por el usuario)
+        const API_PROXY_URL = 'https://tusubdominio.hostinger.com/api/proxy.php';
+        
+        const response = await fetch(API_PROXY_URL, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${OPENAI_API_KEY}`
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 model: 'gpt-4o-mini',
