@@ -1,4 +1,4 @@
-# 📦 Cómo Subir a Chrome Web Store - Versión 1.4
+# 📦 Cómo Subir a Chrome Web Store - Versión 1.4.1
 
 ## 🎯 Pasos para Publicar
 
@@ -12,7 +12,7 @@
 Voice-Scribe-SitioWeb/
 ├── _locales/              (INCLUIR - 56 carpetas de idiomas)
 ├── icons/                 (INCLUIR - todos los iconos)
-├── manifest.json          (INCLUIR - v1.4)
+├── manifest.json          (INCLUIR - v1.4.1)
 ├── popup.html             (INCLUIR)
 ├── popup.js               (INCLUIR)
 ├── sidebar.html           (INCLUIR)
@@ -48,7 +48,7 @@ Voice-Scribe-SitioWeb/
 cd "c:\Users\JON\Voice Scribe Nuevo\Voice-Scribe-SitioWeb"
 
 # Crear ZIP con los archivos necesarios
-Compress-Archive -Path _locales,icons,manifest.json,popup.html,popup.js,sidebar.html,sidebar.js,background.js,permissions.html,permissions.js,styles.css,apple-touch-icon.png,favicon.ico,site.webmanifest -DestinationPath voice-scribe-v1.4.zip -Force
+Compress-Archive -Path _locales,icons,manifest.json,popup.html,popup.js,sidebar.html,sidebar.js,background.js,permissions.html,permissions.js,styles.css,apple-touch-icon.png,favicon.ico,site.webmanifest -DestinationPath voice-scribe-v1.4.1.1.zip -Force
 ```
 
 ---
@@ -119,7 +119,7 @@ Voice Transcription + AI es una extensión poderosa que convierte tu voz en text
 ✓ Crear contenido rápidamente
 ✓ Accesibilidad para personas con dificultades de escritura
 
-🆕 NUEVO EN v1.4:
+🆕 NUEVO EN v1.4.1:
 • Botón de copiar rápido en área de transcripción
 • Interfaz más limpia (detección automática de idioma)
 • Toggle mejorado para cambiar entre modos
@@ -282,7 +282,7 @@ Puedes hostear esto en:
 
 3. **Subir Nueva Extensión**
    - Clic en "New Item"
-   - Subir el archivo ZIP (voice-scribe-v1.4.zip)
+   - Subir el archivo ZIP (voice-scribe-v1.4.1.1.zip)
    - Esperar validación automática
 
 4. **Completar Información**
@@ -352,12 +352,12 @@ Select-String -Path "manifest.json" -Pattern '"version"'
 
 ### **Ver Tamaño del ZIP:**
 ```powershell
-Get-Item voice-scribe-v1.4.zip | Select-Object Name, Length
+Get-Item voice-scribe-v1.4.1.1.zip | Select-Object Name, Length
 ```
 
 ### **Listar Archivos en ZIP:**
 ```powershell
-[System.IO.Compression.ZipFile]::OpenRead("voice-scribe-v1.4.zip").Entries | Select-Object Name
+[System.IO.Compression.ZipFile]::OpenRead("voice-scribe-v1.4.1.1.zip").Entries | Select-Object Name
 ```
 
 ---

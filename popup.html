@@ -29,8 +29,8 @@
             <div class="info-banner-content">
                 <span class="info-icon">💡</span>
                 <div class="info-text">
-                    <strong>¿La extensión se cierra?</strong>
-                    <p>Haz clic en el toggle 📊 para usar el Panel Lateral (no se cierra)</p>
+                    <strong data-i18n="sidebarHintTitle">¿La extensión se cierra?</strong>
+                    <p data-i18n="sidebarHintText">Haz clic en el toggle 📊 para usar el Panel Lateral (no se cierra)</p>
                 </div>
                 <button class="info-close" id="closeBanner">×</button>
             </div>
@@ -267,5 +267,37 @@
     </div>
 
     <script src="popup.js"></script>
+
+    <!-- Permission Modal -->
+    <div class="modal-overlay" id="permissionModal">
+        <div class="permission-modal">
+            <button class="modal-close-btn" id="closePermissionModalBtn">×</button>
+            <span class="modal-icon">🎙️</span>
+            <h3 class="modal-title" data-i18n="modalPermissionTitle">Allow Microphone Access</h3>
+            <p class="modal-text" data-i18n="modalPermissionText">To start recording, please allow microphone access in your browser settings</p>
+            <div class="modal-actions">
+                <button id="openSettingsBtn" class="btn-large btn-settings">
+                    <span data-i18n="btnOpenSettings">Open settings</span>
+                </button>
+                <button id="checkPermissionBtn" class="btn-large btn-done">
+                    <span data-i18n="btnDone">Done!</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Access Required Modal -->
+    <div class="modal-overlay" id="accessRequiredModal">
+        <div class="permission-modal">
+            <span class="modal-icon">🔒</span>
+            <h3 class="modal-title" data-i18n="modalAccessRequiredTitle">Access Required</h3>
+            <p class="modal-text" data-i18n="modalAccessRequiredText">Please reopen the extension to enable access for this tab</p>
+            <div class="modal-actions">
+                <button id="closeExtensionBtn" class="btn-large btn-settings">
+                    <span data-i18n="btnCloseExtension">Close extension</span>
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

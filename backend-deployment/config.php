@@ -35,10 +35,6 @@ define('API_KEY', getenv('API_KEY'));
 define('ALLOWED_EXTENSION_ID', getenv('ALLOWED_EXTENSION_ID'));
 define('API_ENDPOINT', 'https://api.openai.com/v1/chat/completions'); // OpenAI API
 
-// Verificar que la API key existe
-if (!API_KEY || API_KEY === 'tu_api_key_aqui') {
-    http_response_code(500);
-    die(json_encode(['error' => 'API key not configured']));
-}
+// La verificación de la API Key se ha movido a proxy.php para permitir manejo de OPTIONS
 ?>
 

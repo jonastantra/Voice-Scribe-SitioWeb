@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_extName__",
-  "version": "1.4",
+  "version": "1.4.1",
   "description": "__MSG_extDescription__",
   "default_locale": "en",
   "permissions": [
@@ -10,7 +10,7 @@
   ],
   "host_permissions": [
     "https://api.openai.com/",
-    "https://*.hostinger.com/*"
+    "https://backendev.voicescribeia.com/*"
   ],
   "background": {
     "service_worker": "background.js"

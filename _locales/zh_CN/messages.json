@@ -334,5 +334,13 @@
   "alertNoTranscriptionToCopy": {
     "message": "没有要复制的转录文本。",
     "description": "Alert: no transcription to copy"
+  },
+  "sidebarHintTitle": {
+    "message": "Does the extension close?",
+    "description": "Title of the info banner about extension closing"
+  },
+  "sidebarHintText": {
+    "message": "Click the toggle 📊 to use the Side Panel (it stays open)",
+    "description": "Text of the info banner about side panel"
   }
 }

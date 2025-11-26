@@ -13,6 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
+// Verificar que la API key existe (después del preflight)
+if (!defined('API_KEY') || !API_KEY || API_KEY === 'tu_api_key_aqui') {
+    http_response_code(500);
+    die(json_encode(['error' => 'API key not configured in server']));
+}
+
 // Verificar origen (Seguridad Extra)
 // Descomentar y configurar en producción para mayor seguridad
 /*

@@ -334,5 +334,41 @@
   "alertNoTranscriptionToCopy": {
     "message": "No hay texto transcrito para copiar.",
     "description": "Alerta: no hay transcripción para copiar"
+  },
+  "modalPermissionTitle": {
+    "message": "Permitir acceso al micrófono",
+    "description": "Título del modal de permisos"
+  },
+  "modalPermissionText": {
+    "message": "Para comenzar a grabar, por favor permite el acceso al micrófono en la configuración de tu navegador",
+    "description": "Texto del modal de permisos"
+  },
+  "btnOpenSettings": {
+    "message": "Abrir configuración",
+    "description": "Botón para abrir configuración"
+  },
+  "btnDone": {
+    "message": "¡Listo!",
+    "description": "Botón listo"
+  },
+  "modalAccessRequiredTitle": {
+    "message": "Acceso Requerido",
+    "description": "Título del modal de acceso requerido"
+  },
+  "modalAccessRequiredText": {
+    "message": "Por favor, vuelve a abrir la extensión para habilitar el acceso a esta pestaña",
+    "description": "Texto del modal de acceso requerido"
+  },
+  "btnCloseExtension": {
+    "message": "Cerrar extensión",
+    "description": "Botón para cerrar extensión"
+  },
+  "sidebarHintTitle": {
+    "message": "¿La extensión se cierra?",
+    "description": "Título del banner informativo sobre el cierre de la extensión"
+  },
+  "sidebarHintText": {
+    "message": "Haz clic en el toggle 📊 para usar el Panel Lateral (no se cierra)",
+    "description": "Texto del banner informativo sobre el panel lateral"
   }
 }

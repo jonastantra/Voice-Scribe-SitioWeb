@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Conexión Backend - Voice Scribe</title>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        .card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; }
+        button { background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #0056b3; }
+        button:disabled { background: #ccc; cursor: not-allowed; }
+        pre { background: #f8f9fa; padding: 15px; border-radius: 4px; overflow-x: auto; border: 1px solid #eee; }
+        .status { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; }
+        .success { background: #28a745; color: #28a745; }
+        .error { background: #dc3545; color: #dc3545; }
+        .warning { background: #ffc107; color: #856404; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Prueba de Conexión Backend</h1>
+    
+    <div class="card">
+        <h2>Configuración</h2>
+        <p><strong>URL del Proxy:</strong> <code id="proxyUrl">https://backendev.voicescribeia.com/proxy.php</code></p>
+        <p>Esta prueba enviará una solicitud simple a tu backend para verificar:</p>
+        <ol>
+            <li>Si el servidor es accesible</li>
+            <li>Si CORS está configurado correctamente</li>
+            <li>Si la API Key de OpenAI está configurada y funcionando</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2>Ejecutar Prueba</h2>
+        <button id="testBtn" onclick="runTest()">🚀 Probar Conexión</button>
+        <div id="resultArea" style="margin-top: 20px; display: none;">
+            <h3>Resultados:</h3>
+            <div id="statusMessage"></div>
+            <pre id="logOutput"></pre>
+        </div>
+    </div>
+
+    <script>
+        const PROXY_URL = 'https://backendev.voicescribeia.com/proxy.php';
+
+        function log(message, type = 'info') {
+            const logOutput = document.getElementById('logOutput');
+            const timestamp = new Date().toLocaleTimeString();
+            let prefix = '';
+            if (type === 'error') prefix = '❌ ';
+            else if (type === 'success') prefix = '✅ ';
+            else prefix = 'ℹ️ ';
+            
+            logOutput.textContent += `[${timestamp}] ${prefix}${message}\n`;
+        }
+
+        async function runTest() {
+            const btn = document.getElementById('testBtn');
+            const resultArea = document.getElementById('resultArea');
+            const statusMessage = document.getElementById('statusMessage');
+            const logOutput = document.getElementById('logOutput');
+            
+            btn.disabled = true;
+            resultArea.style.display = 'block';
+            logOutput.textContent = '';
+            statusMessage.innerHTML = '<span class="status warning"></span>Probando...';
+            statusMessage.className = '';
+
+            try {
+                log('Iniciando prueba de conexión...');
+                log(`Endpoint: ${PROXY_URL}`);
+
+                const payload = {
+                    model: "gpt-4o-mini",
+                    messages: [
+                        { role: "user", content: "Di 'Conexión Exitosa' si me escuchas." }
+                    ],
+                    max_tokens: 10
+                };
+
+                log('Enviando petición POST...');
+                
+                const startTime = performance.now();
+                const response = await fetch(PROXY_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+                const endTime = performance.now();
+                const duration = (endTime - startTime).toFixed(0);
+
+                log(`Respuesta recibida en ${duration}ms`);
+                log(`Status Code: ${response.status} ${response.statusText}`);
+
+                const text = await response.text();
+                let data;
+                try {
+                    data = JSON.parse(text);
+                } catch (e) {
+                    log('La respuesta no es un JSON válido:', 'error');
+                    log(text.substring(0, 200) + '...');
+                    throw new Error('Respuesta inválida del servidor');
+                }
+
+                if (!response.ok) {
+                    if (data.error) {
+                        throw new Error(`Error del Backend: ${data.error.message || data.error}`);
+                    } else {
+                        throw new Error(`Error HTTP: ${response.status}`);
+                    }
+                }
+
+                if (data.choices && data.choices.length > 0) {
+                    const reply = data.choices[0].message.content;
+                    log(`Respuesta de OpenAI: "${reply}"`, 'success');
+                    statusMessage.innerHTML = '<strong style="color: green;">✅ PRUEBA EXITOSA: El backend funciona correctamente.</strong>';
+                } else {
+                    log('Respuesta inesperada de OpenAI:', 'warning');
+                    log(JSON.stringify(data, null, 2));
+                    statusMessage.innerHTML = '<strong style="color: orange;">⚠️ CONEXIÓN OK, PERO RESPUESTA INESPERADA</strong>';
+                }
+
+            } catch (error) {
+                log(`Error: ${error.message}`, 'error');
+                
+                let helpMsg = '';
+                if (error.message.includes('Failed to fetch')) {
+                    helpMsg = 'Posible error de CORS o servidor no disponible.';
+                } else if (error.message.includes('API key not configured')) {
+                    helpMsg = 'El archivo .env no tiene la API Key configurada o no se puede leer.';
+                } else if (error.message.includes('404')) {
+                    helpMsg = 'El archivo proxy.php no se encuentra en la URL especificada.';
+                } else if (error.message.includes('500')) {
+                    helpMsg = 'Error interno del servidor (posiblemente error de sintaxis en PHP o permisos).';
+                }
+
+                if (helpMsg) log(`Sugerencia: ${helpMsg}`, 'info');
+
+                statusMessage.innerHTML = `<strong style="color: red;">❌ PRUEBA FALLIDA: ${error.message}</strong>`;
+            } finally {
+                btn.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>
+
+
