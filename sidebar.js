@@ -219,8 +219,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     try {
                         await chrome.action.openPopup();
                         console.log('Popup abierto programáticamente');
-                        // Opcional: cerrar sidebar si el popup se abre con éxito
-                        // window.close(); 
+                        // Cerrar sidebar para evitar solapamiento visual
+                        window.close();
                     } catch (error) {
                         console.warn('No se pudo abrir el popup automáticamente:', error);
                         alert('Para ver el modo Popup, haz clic en el icono de la extensión en la barra de herramientas.\n(Chrome no permitió abrirlo automáticamente: ' + error.message + ')');
